@@ -1,0 +1,598 @@
+[2017-09-22 11:09:33,227]-[INFO]-[11896]-[MainThread]-[11512]-[hbase_wrapper.py:20] # init hbase: 192.168.0.26
+[2017-09-22 11:10:35,048]-[INFO]-[1516]-[MainThread]-[11020]-[hbase_wrapper.py:20] # init hbase: 192.168.0.26
+[2017-09-22 11:10:35,049]-[ERROR]-[1516]-[MainThread]-[11020]-[hbase_wrapper.py:35] # 'NoneType' object has no attribute 'close'
+[2017-09-22 11:13:35,642]-[INFO]-[12152]-[MainThread]-[10544]-[hbase_wrapper.py:20] # init hbase: 192.168.0.26
+[2017-09-22 11:13:35,644]-[ERROR]-[12152]-[MainThread]-[10544]-[hbase_wrapper.py:36] # 'NoneType' object has no attribute 'close'
+[2017-09-22 11:14:19,095]-[INFO]-[10896]-[MainThread]-[7596]-[hbase_wrapper.py:20] # init hbase: 192.168.0.26
+[2017-09-22 11:15:29,670]-[INFO]-[10904]-[MainThread]-[5372]-[hbase_wrapper.py:20] # init hbase: 192.168.0.26
+[2017-09-22 11:15:40,408]-[INFO]-[11980]-[MainThread]-[7516]-[hbase_wrapper.py:20] # init hbase: 192.168.0.26
+[2017-09-22 11:15:47,549]-[INFO]-[4612]-[MainThread]-[12240]-[hbase_wrapper.py:20] # init hbase: 192.168.0.26
+[2017-09-22 11:18:02,827]-[INFO]-[10880]-[MainThread]-[11696]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:18:12,910]-[INFO]-[12060]-[MainThread]-[10748]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:18:29,562]-[INFO]-[11468]-[MainThread]-[11932]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:20:17,697]-[INFO]-[9728]-[MainThread]-[6980]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:21:08,302]-[INFO]-[12096]-[MainThread]-[10068]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:21:28,102]-[INFO]-[10980]-[MainThread]-[10988]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:21:34,683]-[INFO]-[11276]-[MainThread]-[10480]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:21:38,848]-[INFO]-[11144]-[MainThread]-[11580]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:21:44,702]-[INFO]-[12184]-[MainThread]-[12156]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:25:03,829]-[INFO]-[8284]-[MainThread]-[1508]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:25:22,550]-[INFO]-[11744]-[MainThread]-[12052]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:25:46,089]-[INFO]-[9608]-[MainThread]-[12012]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:30:25,740]-[INFO]-[9692]-[MainThread]-[11916]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:30:45,114]-[INFO]-[11272]-[MainThread]-[10320]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:31:05,171]-[INFO]-[11580]-[MainThread]-[10068]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:31:51,272]-[INFO]-[10668]-[MainThread]-[10940]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:34:06,319]-[INFO]-[12164]-[MainThread]-[2852]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:34:46,162]-[INFO]-[11112]-[MainThread]-[10664]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:38:40,322]-[INFO]-[11656]-[MainThread]-[10816]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:39:22,465]-[INFO]-[11240]-[MainThread]-[11532]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:39:35,218]-[INFO]-[4308]-[MainThread]-[12160]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:40:11,815]-[INFO]-[11468]-[MainThread]-[12152]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:40:32,761]-[INFO]-[11024]-[MainThread]-[10916]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:40:53,821]-[INFO]-[8108]-[MainThread]-[11856]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:41:06,071]-[INFO]-[12184]-[MainThread]-[1964]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:41:31,293]-[INFO]-[11320]-[MainThread]-[10428]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:45:47,884]-[INFO]-[3908]-[MainThread]-[11624]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:46:41,145]-[INFO]-[10992]-[MainThread]-[4080]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:48:44,399]-[INFO]-[11760]-[MainThread]-[11460]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:49:56,629]-[INFO]-[6120]-[MainThread]-[11216]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 11:50:05,050]-[INFO]-[51664]-[MainThread]-[51668]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 12:39:06,260]-[INFO]-[126576]-[MainThread]-[126580]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 12:39:23,279]-[INFO]-[128884]-[MainThread]-[128908]-[hbase_wrapper.py:22] # init hbase: 192.168.0.26
+[2017-09-22 12:46:46,318]-[INFO]-[132616]-[MainThread]-[132612]-[hbase_wrapper.py:21] # init hbase: 192.168.0.26
+[2017-09-22 12:46:46,908]-[ERROR]-[132616]-[Thread-1]-[132608]-[hbase_wrapper.py:32] # target table: test create fail.
+[2017-09-22 12:46:46,908]-[ERROR]-[132616]-[Thread-2]-[132648]-[hbase_wrapper.py:32] # target table: test create fail.
+[2017-09-22 12:46:46,915]-[ERROR]-[132616]-[Thread-3]-[132668]-[hbase_wrapper.py:32] # target table: test create fail.
+[2017-09-22 12:46:46,915]-[ERROR]-[132616]-[Thread-4]-[132656]-[hbase_wrapper.py:32] # target table: test create fail.
+[2017-09-22 12:46:46,925]-[ERROR]-[132616]-[Thread-5]-[132672]-[hbase_wrapper.py:32] # target table: test create fail.
+[2017-09-22 12:46:46,929]-[ERROR]-[132616]-[Thread-6]-[132632]-[hbase_wrapper.py:32] # target table: test create fail.
+[2017-09-22 12:46:46,937]-[ERROR]-[132616]-[Thread-7]-[132644]-[hbase_wrapper.py:32] # target table: test create fail.
+[2017-09-22 12:46:46,941]-[ERROR]-[132616]-[Thread-8]-[132680]-[hbase_wrapper.py:32] # target table: test create fail.
+[2017-09-22 12:46:46,950]-[ERROR]-[132616]-[Thread-9]-[132660]-[hbase_wrapper.py:32] # target table: test create fail.
+[2017-09-22 12:46:46,953]-[ERROR]-[132616]-[Thread-10]-[132688]-[hbase_wrapper.py:32] # target table: test create fail.
+[2017-09-22 12:47:32,462]-[INFO]-[132988]-[MainThread]-[133000]-[hbase_wrapper.py:21] # init hbase: 192.168.0.26
+[2017-09-22 12:48:44,929]-[INFO]-[133472]-[MainThread]-[133440]-[hbase_wrapper.py:21] # init hbase: 192.168.0.26
+[2017-09-22 12:48:57,005]-[INFO]-[133652]-[MainThread]-[133640]-[hbase_wrapper.py:21] # init hbase: 192.168.0.26
+[2017-09-22 12:50:08,142]-[INFO]-[51396]-[MainThread]-[92224]-[hbase_wrapper.py:21] # init hbase: 192.168.0.26
+[2017-09-22 12:51:00,328]-[INFO]-[122784]-[MainThread]-[123480]-[hbase_wrapper.py:21] # init hbase: 192.168.0.26
+[2017-09-22 12:51:31,310]-[INFO]-[133740]-[MainThread]-[133788]-[hbase_wrapper.py:21] # init hbase: 192.168.0.26
+[2017-09-22 14:18:30,193]-[INFO]-[152228]-[MainThread]-[152216]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:18:40,198]-[ERROR]-[152228]-[Thread-9]-[152192]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:18:40,199]-[ERROR]-[152228]-[Thread-7]-[152236]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:18:40,200]-[ERROR]-[152228]-[Thread-8]-[152284]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:18:40,201]-[ERROR]-[152228]-[Thread-10]-[152256]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:21:10,299]-[INFO]-[153220]-[MainThread]-[153200]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:24:12,639]-[INFO]-[154264]-[MainThread]-[154300]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:24:32,023]-[INFO]-[154568]-[MainThread]-[154588]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:25:09,219]-[INFO]-[154856]-[MainThread]-[154912]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:25:14,229]-[ERROR]-[154856]-[Thread-5]-[154948]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:25:14,230]-[ERROR]-[154856]-[Thread-9]-[154952]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:25:14,232]-[ERROR]-[154856]-[Thread-6]-[154916]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:25:14,234]-[ERROR]-[154856]-[Thread-8]-[154892]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:25:14,239]-[ERROR]-[154856]-[Thread-10]-[154908]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:25:14,240]-[ERROR]-[154856]-[Thread-7]-[154956]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:26:59,546]-[INFO]-[155560]-[MainThread]-[155540]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:27:21,965]-[INFO]-[155920]-[MainThread]-[155876]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:27:26,967]-[ERROR]-[155920]-[Thread-7]-[155912]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:27:26,968]-[ERROR]-[155920]-[Thread-9]-[155936]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:27:26,969]-[ERROR]-[155920]-[Thread-8]-[155952]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:27:26,970]-[ERROR]-[155920]-[Thread-10]-[155996]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:28:04,263]-[INFO]-[156096]-[MainThread]-[156124]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:28:09,275]-[ERROR]-[156096]-[Thread-12]-[156120]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:28:09,276]-[ERROR]-[156096]-[Thread-15]-[156160]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:28:09,277]-[ERROR]-[156096]-[Thread-14]-[156100]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:28:09,278]-[ERROR]-[156096]-[Thread-13]-[156108]-[hbase_wrapper.py:45] # target table: test get fail.
+[2017-09-22 14:34:24,472]-[INFO]-[158776]-[MainThread]-[158828]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:35:06,690]-[INFO]-[159196]-[MainThread]-[159160]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:35:29,771]-[INFO]-[17048]-[MainThread]-[17240]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:40:32,206]-[INFO]-[34356]-[MainThread]-[33424]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:41:04,624]-[INFO]-[99964]-[MainThread]-[100140]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:42:43,438]-[INFO]-[143308]-[MainThread]-[147292]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:43:21,810]-[INFO]-[86892]-[MainThread]-[86424]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:44:35,235]-[INFO]-[56452]-[MainThread]-[56436]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:45:45,388]-[INFO]-[67684]-[MainThread]-[67640]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:46:21,424]-[INFO]-[72464]-[MainThread]-[72904]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:47:22,647]-[INFO]-[77828]-[MainThread]-[77836]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:48:31,793]-[INFO]-[50184]-[MainThread]-[41944]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:48:47,537]-[INFO]-[18528]-[MainThread]-[11344]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:49:01,118]-[INFO]-[22148]-[MainThread]-[22052]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:49:14,773]-[INFO]-[28556]-[MainThread]-[27740]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:50:00,969]-[INFO]-[35444]-[MainThread]-[36928]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:50:21,198]-[INFO]-[42420]-[MainThread]-[43104]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:50:33,360]-[INFO]-[27604]-[MainThread]-[49068]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:50:55,494]-[INFO]-[38096]-[MainThread]-[38020]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:51:22,722]-[INFO]-[105524]-[MainThread]-[104528]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:51:44,368]-[INFO]-[89512]-[MainThread]-[89140]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:52:04,855]-[INFO]-[99444]-[MainThread]-[99212]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:52:58,898]-[INFO]-[107596]-[MainThread]-[107664]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:53:26,076]-[INFO]-[110672]-[MainThread]-[113736]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:53:58,528]-[INFO]-[121516]-[MainThread]-[111396]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 14:59:08,592]-[INFO]-[127608]-[MainThread]-[122284]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:04:03,616]-[INFO]-[132648]-[MainThread]-[132608]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:04:24,089]-[INFO]-[101328]-[MainThread]-[101796]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:05:51,539]-[INFO]-[97732]-[MainThread]-[95136]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:06:49,787]-[INFO]-[137380]-[MainThread]-[137520]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:07:14,531]-[INFO]-[137348]-[MainThread]-[137372]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:07:58,611]-[INFO]-[134172]-[MainThread]-[137228]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:09:19,133]-[INFO]-[142264]-[MainThread]-[142184]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:09:33,947]-[INFO]-[146676]-[MainThread]-[24060]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:10:04,520]-[INFO]-[91228]-[MainThread]-[85088]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:10:10,785]-[INFO]-[12592]-[MainThread]-[10296]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:10:53,308]-[INFO]-[148568]-[MainThread]-[143036]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:11:18,563]-[INFO]-[150080]-[MainThread]-[150060]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:11:24,094]-[INFO]-[150172]-[MainThread]-[150900]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:11:45,053]-[INFO]-[145988]-[MainThread]-[151452]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:13:04,354]-[INFO]-[153712]-[MainThread]-[153892]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:40:47,018]-[INFO]-[91476]-[MainThread]-[91600]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:40:47,019]-[ERROR]-[91476]-[Thread-1]-[91172]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,019]-[ERROR]-[91476]-[Thread-2]-[91200]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,020]-[ERROR]-[91476]-[Thread-3]-[91188]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,021]-[ERROR]-[91476]-[Thread-4]-[91132]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,021]-[ERROR]-[91476]-[Thread-5]-[91004]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,022]-[ERROR]-[91476]-[Thread-6]-[91008]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,022]-[ERROR]-[91476]-[Thread-7]-[90924]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,023]-[ERROR]-[91476]-[Thread-8]-[90864]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,023]-[ERROR]-[91476]-[Thread-9]-[90844]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,024]-[ERROR]-[91476]-[Thread-10]-[90880]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,025]-[ERROR]-[91476]-[Thread-11]-[90768]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,025]-[ERROR]-[91476]-[Thread-12]-[90720]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,026]-[ERROR]-[91476]-[Thread-13]-[90684]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,026]-[ERROR]-[91476]-[Thread-14]-[90716]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,027]-[ERROR]-[91476]-[Thread-15]-[90696]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,027]-[ERROR]-[91476]-[Thread-16]-[90564]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,027]-[ERROR]-[91476]-[Thread-17]-[90544]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,027]-[ERROR]-[91476]-[Thread-18]-[90444]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,028]-[ERROR]-[91476]-[Thread-19]-[90168]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,028]-[ERROR]-[91476]-[Thread-20]-[89932]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,028]-[ERROR]-[91476]-[Thread-21]-[89792]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,029]-[ERROR]-[91476]-[Thread-22]-[89624]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,029]-[ERROR]-[91476]-[Thread-23]-[90496]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,029]-[ERROR]-[91476]-[Thread-24]-[90428]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,030]-[ERROR]-[91476]-[Thread-25]-[90416]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,030]-[ERROR]-[91476]-[Thread-26]-[90348]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,030]-[ERROR]-[91476]-[Thread-27]-[89788]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,031]-[ERROR]-[91476]-[Thread-28]-[89460]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,031]-[ERROR]-[91476]-[Thread-29]-[89876]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,031]-[ERROR]-[91476]-[Thread-30]-[89668]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,031]-[ERROR]-[91476]-[Thread-31]-[88684]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,032]-[ERROR]-[91476]-[Thread-32]-[90304]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,032]-[ERROR]-[91476]-[Thread-33]-[90396]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,032]-[ERROR]-[91476]-[Thread-34]-[90176]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,033]-[ERROR]-[91476]-[Thread-35]-[90180]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,033]-[ERROR]-[91476]-[Thread-36]-[89980]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,033]-[ERROR]-[91476]-[Thread-37]-[90196]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,034]-[ERROR]-[91476]-[Thread-38]-[90188]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,034]-[ERROR]-[91476]-[Thread-39]-[90096]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,034]-[ERROR]-[91476]-[Thread-40]-[89960]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,035]-[ERROR]-[91476]-[Thread-41]-[89992]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,035]-[ERROR]-[91476]-[Thread-42]-[89804]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,035]-[ERROR]-[91476]-[Thread-43]-[89896]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,035]-[ERROR]-[91476]-[Thread-44]-[89052]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,036]-[ERROR]-[91476]-[Thread-45]-[89700]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,036]-[ERROR]-[91476]-[Thread-46]-[89168]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,036]-[ERROR]-[91476]-[Thread-47]-[89080]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,037]-[ERROR]-[91476]-[Thread-48]-[89120]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,037]-[ERROR]-[91476]-[Thread-49]-[88504]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,037]-[ERROR]-[91476]-[Thread-50]-[89592]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,038]-[ERROR]-[91476]-[Thread-51]-[88616]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,038]-[ERROR]-[91476]-[Thread-52]-[88656]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,038]-[ERROR]-[91476]-[Thread-53]-[88848]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,038]-[ERROR]-[91476]-[Thread-54]-[89008]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,039]-[ERROR]-[91476]-[Thread-55]-[88468]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,039]-[ERROR]-[91476]-[Thread-56]-[89192]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,040]-[ERROR]-[91476]-[Thread-57]-[89536]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,040]-[ERROR]-[91476]-[Thread-58]-[89408]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,040]-[ERROR]-[91476]-[Thread-59]-[88604]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,041]-[ERROR]-[91476]-[Thread-60]-[88520]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,041]-[ERROR]-[91476]-[Thread-61]-[89048]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,041]-[ERROR]-[91476]-[Thread-62]-[88812]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,042]-[ERROR]-[91476]-[Thread-63]-[88860]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,042]-[ERROR]-[91476]-[Thread-64]-[89104]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,042]-[ERROR]-[91476]-[Thread-65]-[88924]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,042]-[ERROR]-[91476]-[Thread-66]-[88664]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,043]-[ERROR]-[91476]-[Thread-67]-[89076]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,043]-[ERROR]-[91476]-[Thread-68]-[88592]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,043]-[ERROR]-[91476]-[Thread-69]-[88488]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,044]-[ERROR]-[91476]-[Thread-70]-[89244]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,044]-[ERROR]-[91476]-[Thread-71]-[89340]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,044]-[ERROR]-[91476]-[Thread-72]-[88776]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,045]-[ERROR]-[91476]-[Thread-73]-[15032]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,045]-[ERROR]-[91476]-[Thread-74]-[15076]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,045]-[ERROR]-[91476]-[Thread-75]-[15136]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,046]-[ERROR]-[91476]-[Thread-76]-[14968]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,046]-[ERROR]-[91476]-[Thread-77]-[14952]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,046]-[ERROR]-[91476]-[Thread-78]-[14748]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,046]-[ERROR]-[91476]-[Thread-79]-[14428]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,047]-[ERROR]-[91476]-[Thread-80]-[14904]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,047]-[ERROR]-[91476]-[Thread-81]-[14640]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,047]-[ERROR]-[91476]-[Thread-82]-[11992]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,048]-[ERROR]-[91476]-[Thread-83]-[14780]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,048]-[ERROR]-[91476]-[Thread-84]-[14860]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,048]-[ERROR]-[91476]-[Thread-85]-[14616]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,049]-[ERROR]-[91476]-[Thread-86]-[14704]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,049]-[ERROR]-[91476]-[Thread-87]-[14700]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,049]-[ERROR]-[91476]-[Thread-88]-[14612]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,049]-[ERROR]-[91476]-[Thread-89]-[14628]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,050]-[ERROR]-[91476]-[Thread-90]-[14308]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,050]-[ERROR]-[91476]-[Thread-91]-[14544]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,050]-[ERROR]-[91476]-[Thread-92]-[14580]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,051]-[ERROR]-[91476]-[Thread-93]-[14416]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,051]-[ERROR]-[91476]-[Thread-94]-[14344]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,051]-[ERROR]-[91476]-[Thread-95]-[14340]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,052]-[ERROR]-[91476]-[Thread-96]-[14248]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,052]-[ERROR]-[91476]-[Thread-97]-[14292]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,052]-[ERROR]-[91476]-[Thread-98]-[14140]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,053]-[ERROR]-[91476]-[Thread-99]-[14080]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,053]-[ERROR]-[91476]-[Thread-100]-[14076]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,053]-[ERROR]-[91476]-[Thread-101]-[13980]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,054]-[ERROR]-[91476]-[Thread-102]-[16980]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,054]-[ERROR]-[91476]-[Thread-103]-[14096]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,054]-[ERROR]-[91476]-[Thread-104]-[13968]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,055]-[ERROR]-[91476]-[Thread-105]-[13908]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,055]-[ERROR]-[91476]-[Thread-106]-[13960]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,055]-[ERROR]-[91476]-[Thread-107]-[13832]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,056]-[ERROR]-[91476]-[Thread-108]-[13596]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,056]-[ERROR]-[91476]-[Thread-109]-[13844]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,056]-[ERROR]-[91476]-[Thread-110]-[13852]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,057]-[ERROR]-[91476]-[Thread-111]-[13816]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,058]-[ERROR]-[91476]-[Thread-112]-[13536]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,058]-[ERROR]-[91476]-[Thread-113]-[13728]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,059]-[ERROR]-[91476]-[Thread-114]-[13492]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,059]-[ERROR]-[91476]-[Thread-115]-[13692]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,060]-[ERROR]-[91476]-[Thread-116]-[13484]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,060]-[ERROR]-[91476]-[Thread-117]-[13624]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,061]-[ERROR]-[91476]-[Thread-118]-[13568]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,061]-[ERROR]-[91476]-[Thread-119]-[13436]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,062]-[ERROR]-[91476]-[Thread-120]-[13472]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,062]-[ERROR]-[91476]-[Thread-121]-[13384]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,062]-[ERROR]-[91476]-[Thread-122]-[13232]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,063]-[ERROR]-[91476]-[Thread-123]-[13100]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,063]-[ERROR]-[91476]-[Thread-124]-[13284]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,063]-[ERROR]-[91476]-[Thread-125]-[13244]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,064]-[ERROR]-[91476]-[Thread-126]-[13208]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,064]-[ERROR]-[91476]-[Thread-127]-[13084]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,064]-[ERROR]-[91476]-[Thread-128]-[13048]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,065]-[ERROR]-[91476]-[Thread-129]-[13192]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,065]-[ERROR]-[91476]-[Thread-130]-[13108]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,065]-[ERROR]-[91476]-[Thread-131]-[13004]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,066]-[ERROR]-[91476]-[Thread-132]-[12984]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,066]-[ERROR]-[91476]-[Thread-133]-[13020]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,066]-[ERROR]-[91476]-[Thread-134]-[12736]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,067]-[ERROR]-[91476]-[Thread-135]-[12992]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,067]-[ERROR]-[91476]-[Thread-136]-[12852]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,067]-[ERROR]-[91476]-[Thread-137]-[12864]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,068]-[ERROR]-[91476]-[Thread-138]-[12632]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,068]-[ERROR]-[91476]-[Thread-139]-[12500]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,068]-[ERROR]-[91476]-[Thread-140]-[12656]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,069]-[ERROR]-[91476]-[Thread-141]-[12728]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,069]-[ERROR]-[91476]-[Thread-142]-[12648]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,070]-[ERROR]-[91476]-[Thread-143]-[12680]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,070]-[ERROR]-[91476]-[Thread-144]-[12492]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,071]-[ERROR]-[91476]-[Thread-145]-[12620]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,071]-[ERROR]-[91476]-[Thread-146]-[12476]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,071]-[ERROR]-[91476]-[Thread-147]-[12412]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,072]-[ERROR]-[91476]-[Thread-148]-[12388]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,072]-[ERROR]-[91476]-[Thread-149]-[12444]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,072]-[ERROR]-[91476]-[Thread-150]-[9396]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,072]-[ERROR]-[91476]-[Thread-151]-[12376]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,073]-[ERROR]-[91476]-[Thread-152]-[3928]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,073]-[ERROR]-[91476]-[Thread-153]-[11936]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,073]-[ERROR]-[91476]-[Thread-154]-[12044]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,074]-[ERROR]-[91476]-[Thread-155]-[12172]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,074]-[ERROR]-[91476]-[Thread-156]-[10768]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,075]-[ERROR]-[91476]-[Thread-157]-[4272]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,075]-[ERROR]-[91476]-[Thread-158]-[2036]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,075]-[ERROR]-[91476]-[Thread-159]-[10668]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,076]-[ERROR]-[91476]-[Thread-160]-[11416]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,076]-[ERROR]-[91476]-[Thread-161]-[11460]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,076]-[ERROR]-[91476]-[Thread-162]-[11504]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,077]-[ERROR]-[91476]-[Thread-163]-[8888]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,077]-[ERROR]-[91476]-[Thread-164]-[11600]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,077]-[ERROR]-[91476]-[Thread-165]-[10140]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,078]-[ERROR]-[91476]-[Thread-166]-[10320]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,078]-[ERROR]-[91476]-[Thread-167]-[11436]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,078]-[ERROR]-[91476]-[Thread-168]-[11352]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,079]-[ERROR]-[91476]-[Thread-169]-[12252]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,079]-[ERROR]-[91476]-[Thread-170]-[1168]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,079]-[ERROR]-[91476]-[Thread-171]-[12244]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,079]-[ERROR]-[91476]-[Thread-172]-[92104]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,080]-[ERROR]-[91476]-[Thread-173]-[92056]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,080]-[ERROR]-[91476]-[Thread-174]-[91956]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,080]-[ERROR]-[91476]-[Thread-175]-[91508]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,081]-[ERROR]-[91476]-[Thread-176]-[91824]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,081]-[ERROR]-[91476]-[Thread-177]-[92156]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,081]-[ERROR]-[91476]-[Thread-178]-[91940]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,081]-[ERROR]-[91476]-[Thread-179]-[91976]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,082]-[ERROR]-[91476]-[Thread-180]-[91900]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,082]-[ERROR]-[91476]-[Thread-181]-[92120]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,082]-[ERROR]-[91476]-[Thread-182]-[92068]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,083]-[ERROR]-[91476]-[Thread-183]-[91960]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,083]-[ERROR]-[91476]-[Thread-184]-[92116]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,083]-[ERROR]-[91476]-[Thread-185]-[91868]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,083]-[ERROR]-[91476]-[Thread-186]-[91652]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,085]-[ERROR]-[91476]-[Thread-187]-[91332]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,085]-[ERROR]-[91476]-[Thread-188]-[91448]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,086]-[ERROR]-[91476]-[Thread-189]-[91780]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,087]-[ERROR]-[91476]-[Thread-190]-[91420]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,087]-[ERROR]-[91476]-[Thread-191]-[16772]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,088]-[ERROR]-[91476]-[Thread-192]-[16700]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,088]-[ERROR]-[91476]-[Thread-193]-[15192]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,088]-[ERROR]-[91476]-[Thread-194]-[15216]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,089]-[ERROR]-[91476]-[Thread-195]-[15240]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,089]-[ERROR]-[91476]-[Thread-196]-[87440]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,090]-[ERROR]-[91476]-[Thread-197]-[17400]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,090]-[ERROR]-[91476]-[Thread-198]-[17380]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:40:47,091]-[ERROR]-[91476]-[Thread-199]-[17168]-[hbase_wrapper.py:58] # target table: test get fail.
+[2017-09-22 15:41:17,897]-[INFO]-[159252]-[MainThread]-[159292]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:41:17,898]-[ERROR]-[159252]-[Thread-1]-[159284]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,898]-[ERROR]-[159252]-[Thread-2]-[159248]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,899]-[ERROR]-[159252]-[Thread-3]-[159340]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,900]-[ERROR]-[159252]-[Thread-4]-[159308]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,900]-[ERROR]-[159252]-[Thread-5]-[159312]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,900]-[ERROR]-[159252]-[Thread-6]-[159336]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,901]-[ERROR]-[159252]-[Thread-7]-[159344]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,901]-[ERROR]-[159252]-[Thread-8]-[159300]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,902]-[ERROR]-[159252]-[Thread-9]-[159372]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,902]-[ERROR]-[159252]-[Thread-10]-[159368]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,902]-[ERROR]-[159252]-[Thread-11]-[159364]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,903]-[ERROR]-[159252]-[Thread-12]-[159320]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,904]-[ERROR]-[159252]-[Thread-13]-[159360]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,904]-[ERROR]-[159252]-[Thread-14]-[159392]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,904]-[ERROR]-[159252]-[Thread-15]-[159332]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,904]-[ERROR]-[159252]-[Thread-16]-[159328]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,905]-[ERROR]-[159252]-[Thread-17]-[159304]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,905]-[ERROR]-[159252]-[Thread-18]-[159316]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,905]-[ERROR]-[159252]-[Thread-19]-[159352]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,906]-[ERROR]-[159252]-[Thread-20]-[159256]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,906]-[ERROR]-[159252]-[Thread-21]-[159128]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,906]-[ERROR]-[159252]-[Thread-22]-[159356]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,906]-[ERROR]-[159252]-[Thread-23]-[159348]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,907]-[ERROR]-[159252]-[Thread-24]-[159376]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,907]-[ERROR]-[159252]-[Thread-25]-[159404]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,907]-[ERROR]-[159252]-[Thread-26]-[159380]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,908]-[ERROR]-[159252]-[Thread-27]-[159468]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,908]-[ERROR]-[159252]-[Thread-28]-[159396]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,908]-[ERROR]-[159252]-[Thread-29]-[159416]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,908]-[ERROR]-[159252]-[Thread-30]-[159400]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,909]-[ERROR]-[159252]-[Thread-31]-[159428]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,909]-[ERROR]-[159252]-[Thread-32]-[159388]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,909]-[ERROR]-[159252]-[Thread-33]-[159420]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,909]-[ERROR]-[159252]-[Thread-34]-[159384]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,910]-[ERROR]-[159252]-[Thread-35]-[159448]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,911]-[ERROR]-[159252]-[Thread-36]-[159464]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,911]-[ERROR]-[159252]-[Thread-37]-[159444]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,911]-[ERROR]-[159252]-[Thread-38]-[159436]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,911]-[ERROR]-[159252]-[Thread-39]-[159460]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,912]-[ERROR]-[159252]-[Thread-40]-[159412]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,912]-[ERROR]-[159252]-[Thread-41]-[159440]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,912]-[ERROR]-[159252]-[Thread-42]-[159408]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,912]-[ERROR]-[159252]-[Thread-43]-[159432]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,913]-[ERROR]-[159252]-[Thread-44]-[159512]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,913]-[ERROR]-[159252]-[Thread-45]-[159500]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,913]-[ERROR]-[159252]-[Thread-46]-[159540]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,913]-[ERROR]-[159252]-[Thread-47]-[159424]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,914]-[ERROR]-[159252]-[Thread-48]-[159456]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,914]-[ERROR]-[159252]-[Thread-49]-[159476]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,914]-[ERROR]-[159252]-[Thread-50]-[159488]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,915]-[ERROR]-[159252]-[Thread-51]-[159576]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,915]-[ERROR]-[159252]-[Thread-52]-[159716]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,915]-[ERROR]-[159252]-[Thread-53]-[159600]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,916]-[ERROR]-[159252]-[Thread-54]-[159496]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,916]-[ERROR]-[159252]-[Thread-55]-[159472]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,916]-[ERROR]-[159252]-[Thread-56]-[159492]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,917]-[ERROR]-[159252]-[Thread-57]-[159748]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,917]-[ERROR]-[159252]-[Thread-58]-[159652]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,917]-[ERROR]-[159252]-[Thread-59]-[159616]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,917]-[ERROR]-[159252]-[Thread-60]-[159516]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,918]-[ERROR]-[159252]-[Thread-61]-[159480]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,918]-[ERROR]-[159252]-[Thread-62]-[159624]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,918]-[ERROR]-[159252]-[Thread-63]-[159660]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,918]-[ERROR]-[159252]-[Thread-64]-[159580]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,919]-[ERROR]-[159252]-[Thread-65]-[159628]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,919]-[ERROR]-[159252]-[Thread-66]-[159504]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,919]-[ERROR]-[159252]-[Thread-67]-[159632]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,919]-[ERROR]-[159252]-[Thread-68]-[159636]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,920]-[ERROR]-[159252]-[Thread-69]-[159556]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,920]-[ERROR]-[159252]-[Thread-70]-[159640]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,920]-[ERROR]-[159252]-[Thread-71]-[159568]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,921]-[ERROR]-[159252]-[Thread-72]-[159484]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,921]-[ERROR]-[159252]-[Thread-73]-[159544]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,921]-[ERROR]-[159252]-[Thread-74]-[159644]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,921]-[ERROR]-[159252]-[Thread-75]-[159612]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,922]-[ERROR]-[159252]-[Thread-76]-[159668]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,922]-[ERROR]-[159252]-[Thread-77]-[159700]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,922]-[ERROR]-[159252]-[Thread-78]-[159536]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,922]-[ERROR]-[159252]-[Thread-79]-[159648]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,923]-[ERROR]-[159252]-[Thread-80]-[159664]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,923]-[ERROR]-[159252]-[Thread-81]-[159564]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,923]-[ERROR]-[159252]-[Thread-82]-[159604]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,923]-[ERROR]-[159252]-[Thread-83]-[159656]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,924]-[ERROR]-[159252]-[Thread-84]-[159676]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,924]-[ERROR]-[159252]-[Thread-85]-[159720]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,924]-[ERROR]-[159252]-[Thread-86]-[159620]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,925]-[ERROR]-[159252]-[Thread-87]-[159584]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,925]-[ERROR]-[159252]-[Thread-88]-[159508]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,925]-[ERROR]-[159252]-[Thread-89]-[159548]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,925]-[ERROR]-[159252]-[Thread-90]-[159552]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,926]-[ERROR]-[159252]-[Thread-91]-[159680]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,926]-[ERROR]-[159252]-[Thread-92]-[159520]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,926]-[ERROR]-[159252]-[Thread-93]-[159524]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,926]-[ERROR]-[159252]-[Thread-94]-[159452]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,927]-[ERROR]-[159252]-[Thread-95]-[159572]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,927]-[ERROR]-[159252]-[Thread-96]-[159608]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,927]-[ERROR]-[159252]-[Thread-97]-[159560]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,928]-[ERROR]-[159252]-[Thread-98]-[159704]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,928]-[ERROR]-[159252]-[Thread-99]-[159688]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,928]-[ERROR]-[159252]-[Thread-100]-[159672]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,928]-[ERROR]-[159252]-[Thread-101]-[159684]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,929]-[ERROR]-[159252]-[Thread-102]-[159712]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,929]-[ERROR]-[159252]-[Thread-103]-[159528]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,929]-[ERROR]-[159252]-[Thread-104]-[159588]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,930]-[ERROR]-[159252]-[Thread-105]-[159728]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,930]-[ERROR]-[159252]-[Thread-106]-[159772]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,930]-[ERROR]-[159252]-[Thread-107]-[159596]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,930]-[ERROR]-[159252]-[Thread-108]-[159692]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,931]-[ERROR]-[159252]-[Thread-109]-[159592]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,931]-[ERROR]-[159252]-[Thread-110]-[159532]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,931]-[ERROR]-[159252]-[Thread-111]-[159752]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,932]-[ERROR]-[159252]-[Thread-112]-[159736]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,932]-[ERROR]-[159252]-[Thread-113]-[159740]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,932]-[ERROR]-[159252]-[Thread-114]-[159696]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,932]-[ERROR]-[159252]-[Thread-115]-[159768]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,933]-[ERROR]-[159252]-[Thread-116]-[159708]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,933]-[ERROR]-[159252]-[Thread-117]-[159800]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,933]-[ERROR]-[159252]-[Thread-118]-[159756]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,933]-[ERROR]-[159252]-[Thread-119]-[159760]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,934]-[ERROR]-[159252]-[Thread-120]-[159784]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,934]-[ERROR]-[159252]-[Thread-121]-[159788]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,934]-[ERROR]-[159252]-[Thread-122]-[159852]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,935]-[ERROR]-[159252]-[Thread-123]-[159812]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,935]-[ERROR]-[159252]-[Thread-124]-[159776]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,935]-[ERROR]-[159252]-[Thread-125]-[159724]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,936]-[ERROR]-[159252]-[Thread-126]-[159764]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,936]-[ERROR]-[159252]-[Thread-127]-[159732]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,936]-[ERROR]-[159252]-[Thread-128]-[159808]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,936]-[ERROR]-[159252]-[Thread-129]-[159796]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,937]-[ERROR]-[159252]-[Thread-130]-[159792]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,937]-[ERROR]-[159252]-[Thread-131]-[159824]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,937]-[ERROR]-[159252]-[Thread-132]-[159820]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,938]-[ERROR]-[159252]-[Thread-133]-[159804]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,938]-[ERROR]-[159252]-[Thread-134]-[159780]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,938]-[ERROR]-[159252]-[Thread-135]-[159836]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,939]-[ERROR]-[159252]-[Thread-136]-[159848]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,939]-[ERROR]-[159252]-[Thread-137]-[159828]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,939]-[ERROR]-[159252]-[Thread-138]-[159872]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,939]-[ERROR]-[159252]-[Thread-139]-[159868]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,940]-[ERROR]-[159252]-[Thread-140]-[159840]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,940]-[ERROR]-[159252]-[Thread-141]-[159844]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,940]-[ERROR]-[159252]-[Thread-142]-[159864]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,941]-[ERROR]-[159252]-[Thread-143]-[159832]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,941]-[ERROR]-[159252]-[Thread-144]-[159928]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,941]-[ERROR]-[159252]-[Thread-145]-[159876]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,941]-[ERROR]-[159252]-[Thread-146]-[159888]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,942]-[ERROR]-[159252]-[Thread-147]-[159816]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,942]-[ERROR]-[159252]-[Thread-148]-[159880]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,942]-[ERROR]-[159252]-[Thread-149]-[159932]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,942]-[ERROR]-[159252]-[Thread-150]-[159960]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,943]-[ERROR]-[159252]-[Thread-151]-[159908]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,943]-[ERROR]-[159252]-[Thread-152]-[159904]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,943]-[ERROR]-[159252]-[Thread-153]-[159856]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,944]-[ERROR]-[159252]-[Thread-154]-[159920]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,944]-[ERROR]-[159252]-[Thread-155]-[159900]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,944]-[ERROR]-[159252]-[Thread-156]-[159860]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,944]-[ERROR]-[159252]-[Thread-157]-[159924]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,945]-[ERROR]-[159252]-[Thread-158]-[159940]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,945]-[ERROR]-[159252]-[Thread-159]-[159912]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,946]-[ERROR]-[159252]-[Thread-160]-[159896]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,946]-[ERROR]-[159252]-[Thread-161]-[159884]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,946]-[ERROR]-[159252]-[Thread-162]-[160016]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,946]-[ERROR]-[159252]-[Thread-163]-[159988]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,947]-[ERROR]-[159252]-[Thread-164]-[159968]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,947]-[ERROR]-[159252]-[Thread-165]-[159892]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,947]-[ERROR]-[159252]-[Thread-166]-[159972]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,948]-[ERROR]-[159252]-[Thread-167]-[160008]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,948]-[ERROR]-[159252]-[Thread-168]-[159976]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,948]-[ERROR]-[159252]-[Thread-169]-[159980]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,948]-[ERROR]-[159252]-[Thread-170]-[159916]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,949]-[ERROR]-[159252]-[Thread-171]-[159936]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,949]-[ERROR]-[159252]-[Thread-172]-[160004]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,949]-[ERROR]-[159252]-[Thread-173]-[159956]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,949]-[ERROR]-[159252]-[Thread-174]-[159964]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,950]-[ERROR]-[159252]-[Thread-175]-[159992]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,950]-[ERROR]-[159252]-[Thread-176]-[159952]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,950]-[ERROR]-[159252]-[Thread-177]-[160052]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,951]-[ERROR]-[159252]-[Thread-178]-[160028]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,951]-[ERROR]-[159252]-[Thread-179]-[159944]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,951]-[ERROR]-[159252]-[Thread-180]-[160012]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,951]-[ERROR]-[159252]-[Thread-181]-[159984]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,952]-[ERROR]-[159252]-[Thread-182]-[159948]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,952]-[ERROR]-[159252]-[Thread-183]-[160044]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,952]-[ERROR]-[159252]-[Thread-184]-[159996]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,953]-[ERROR]-[159252]-[Thread-185]-[160036]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,953]-[ERROR]-[159252]-[Thread-186]-[160000]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,953]-[ERROR]-[159252]-[Thread-187]-[160060]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,953]-[ERROR]-[159252]-[Thread-188]-[160032]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,954]-[ERROR]-[159252]-[Thread-189]-[160040]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,954]-[ERROR]-[159252]-[Thread-190]-[160020]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,954]-[ERROR]-[159252]-[Thread-191]-[160104]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,954]-[ERROR]-[159252]-[Thread-192]-[160056]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,955]-[ERROR]-[159252]-[Thread-193]-[160024]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,955]-[ERROR]-[159252]-[Thread-194]-[160096]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,955]-[ERROR]-[159252]-[Thread-195]-[160080]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,956]-[ERROR]-[159252]-[Thread-196]-[160068]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,956]-[ERROR]-[159252]-[Thread-197]-[160048]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,957]-[ERROR]-[159252]-[Thread-198]-[160124]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:17,957]-[ERROR]-[159252]-[Thread-199]-[160108]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:41:37,121]-[INFO]-[160260]-[MainThread]-[160284]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:41:37,122]-[ERROR]-[160260]-[Thread-1]-[160296]-[hbase_wrapper.py:57] # target table: test get fail.
+[2017-09-22 15:43:29,043]-[INFO]-[51764]-[MainThread]-[51740]-[hbase_wrapper.py:23] # init hbase: 192.168.0.26
+[2017-09-22 15:43:31,049]-[ERROR]-[51764]-[MainThread]-[51740]-[hbase_wrapper.py:31] # connect host:192.168.0.26 error,start reconnect,time:0
+[2017-09-22 15:43:38,062]-[ERROR]-[51764]-[MainThread]-[51740]-[hbase_wrapper.py:31] # connect host:192.168.0.26 error,start reconnect,time:1
+[2017-09-22 15:43:45,064]-[ERROR]-[51764]-[MainThread]-[51740]-[hbase_wrapper.py:31] # connect host:192.168.0.26 error,start reconnect,time:2
+[2017-09-22 15:43:52,066]-[ERROR]-[51764]-[MainThread]-[51740]-[hbase_wrapper.py:31] # connect host:192.168.0.26 error,start reconnect,time:3
+[2017-09-22 15:43:59,068]-[ERROR]-[51764]-[MainThread]-[51740]-[hbase_wrapper.py:31] # connect host:192.168.0.26 error,start reconnect,time:4
+[2017-09-22 15:47:46,302]-[INFO]-[53764]-[MainThread]-[53660]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 15:47:48,310]-[ERROR]-[53764]-[MainThread]-[53660]-[hbase_wrapper.py:33] # connect host:192.168.0.26 error,start reconnect,time:0
+[2017-09-22 15:47:48,314]-[ERROR]-[53764]-[MainThread]-[53660]-[hbase_wrapper.py:34] # Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\Python 3.5\lib\site-packages\thriftpy\transport\socket.py", line 96, in open
+    self.sock.connect(addr)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\Python 3.5\lib\site-packages\happybase\pool.py", line 136, in connection
+    connection.open()
+  File "D:\Computer_Scientist_Tools\Python 3.5\lib\site-packages\happybase\connection.py", line 176, in open
+    self.transport.open()
+  File "D:\Computer_Scientist_Tools\Python 3.5\lib\site-packages\thriftpy\transport\buffered\__init__.py", line 29, in open
+    return self._trans.open()
+  File "D:\Computer_Scientist_Tools\Python 3.5\lib\site-packages\thriftpy\transport\socket.py", line 104, in open
+    message="Could not connect to %s" % str(addr))
+thriftpy.transport.TTransportException: TTransportException(message="Could not connect to ('localhost', 9090)", type=1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\Python 3.5\lib\site-packages\thriftpy\transport\socket.py", line 96, in open
+    self.sock.connect(addr)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\All_Projects\JobWorkspace\wrapeprs\src\wrapper\hbase_wrapper.py", line 31, in connect
+    autoconnect=True)
+  File "D:\Computer_Scientist_Tools\Python 3.5\lib\site-packages\happybase\pool.py", line 78, in __init__
+    with self.connection():
+  File "D:\Computer_Scientist_Tools\Python 3.5\lib\contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "D:\Computer_Scientist_Tools\Python 3.5\lib\site-packages\happybase\pool.py", line 147, in connection
+    connection.open()
+  File "D:\Computer_Scientist_Tools\Python 3.5\lib\site-packages\happybase\connection.py", line 176, in open
+    self.transport.open()
+  File "D:\Computer_Scientist_Tools\Python 3.5\lib\site-packages\thriftpy\transport\buffered\__init__.py", line 29, in open
+    return self._trans.open()
+  File "D:\Computer_Scientist_Tools\Python 3.5\lib\site-packages\thriftpy\transport\socket.py", line 104, in open
+    message="Could not connect to %s" % str(addr))
+thriftpy.transport.TTransportException: TTransportException(message="Could not connect to ('localhost', 9090)", type=1)
+
+[2017-09-22 15:51:25,268]-[INFO]-[55340]-[MainThread]-[55312]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 16:04:10,729]-[INFO]-[60700]-[MainThread]-[60992]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 16:04:17,789]-[INFO]-[61156]-[MainThread]-[61108]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 16:05:07,215]-[INFO]-[61420]-[MainThread]-[61436]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 16:05:45,947]-[INFO]-[61928]-[MainThread]-[61876]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 16:07:03,595]-[INFO]-[62732]-[MainThread]-[62780]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 16:09:03,225]-[INFO]-[64384]-[MainThread]-[63652]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 16:09:10,288]-[INFO]-[63528]-[MainThread]-[63596]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 16:09:19,530]-[INFO]-[64340]-[MainThread]-[63796]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 16:09:45,304]-[INFO]-[82760]-[MainThread]-[79392]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 16:09:56,576]-[INFO]-[79408]-[MainThread]-[82640]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 16:10:58,421]-[INFO]-[133128]-[MainThread]-[133108]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 16:11:31,483]-[INFO]-[93104]-[MainThread]-[92992]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 16:11:57,729]-[INFO]-[94392]-[MainThread]-[93992]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 16:18:34,971]-[INFO]-[99192]-[MainThread]-[99224]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 16:26:05,611]-[INFO]-[102632]-[MainThread]-[106096]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-22 16:40:50,740]-[INFO]-[114080]-[MainThread]-[116376]-[hbase_wrapper.py:12] # init hbase: 192.168.0.26
+[2017-09-22 16:51:42,217]-[INFO]-[122916]-[MainThread]-[113968]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
