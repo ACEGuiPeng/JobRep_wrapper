@@ -71,5 +71,10 @@ class _CONST(object):
     HAPPYBASE_RECONNECT_TIMES = 100
     HAPPYBASE_RECONNECT_WAIT_SECONDS = 5
 
+    # mysql
+    MYSQL_USERNAME = 'root'
+    MYSQL_PWD = '123456'
+    DB_URL = '192.168.0.16'
+
 
 CONST = _CONST()
