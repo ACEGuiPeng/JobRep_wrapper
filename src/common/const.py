@@ -73,8 +73,8 @@ class _CONST(object):
 
     # mysql
     MYSQL_USERNAME = 'root'
-    MYSQL_PWD = '123456'
-    DB_URL = '192.168.0.16'
+    MYSQL_PWD = 'root'
+    DB_URL = '192.168.0.26'
 
 
 CONST = _CONST()
