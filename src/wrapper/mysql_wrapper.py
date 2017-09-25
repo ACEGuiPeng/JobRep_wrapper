@@ -22,7 +22,7 @@ class MysqlWrapper(object):
         return cls._instance
 
     def __init__(self):
-        self.__session = None
+        self.session = None
         self.engine = None
         log.info('init mysql: {}'.format(CONST.DB_URL))
 
@@ -30,11 +30,12 @@ class MysqlWrapper(object):
         try:
             self.engine = create_engine(
                 'mysql+mysqlconnector://{username}:{pwd}@{db_url}/{db_name}'.format(
-                    username=CONST.MYSQL_USERNAME, pwd=CONST.MYSQL_PWD, db_url=CONST.DB_URL, db_name=db_name))
+                    username=CONST.MYSQL_USERNAME, pwd=CONST.MYSQL_PWD, db_url=CONST.DB_URL, db_name=db_name),
+                echo=True)
 
             DB_Session = sessionmaker(bind=self.engine)
 
-            self.__session = DB_Session()
+            self.session = DB_Session()
             base.metadata.create_all(self.engine)
 
         except Exception as e:
@@ -43,39 +44,39 @@ class MysqlWrapper(object):
 
     def add_info(self, table_obj):
         try:
-            log.info(self.__session.add(table_obj))
-            self.__session.commit()
+            self.session.add(table_obj)
+            self.session.commit()
         except Exception as e:
             log.error('{}'.format('', str(e)))
             raise Exception(str(e))
 
     def add_info_list(self, table_obj_list):
         try:
-            self.__session.add_all(table_obj_list)
-            self.__session.commit()
+            self.session.add_all(table_obj_list)
+            self.session.commit()
         except Exception as e:
             log.error('{}'.format('', str(e)))
             raise Exception(str(e))
 
     def delete_info(self, table_obj):
         try:
-            self.__session.delete(table_obj)
-            self.__session.commit()
+            self.session.delete(table_obj)
+            self.session.commit()
         except Exception as e:
             log.error('{}'.format('', str(e)))
             raise Exception(str(e))
 
     def update_info(self, target_obj, target_criteria, data_dict):
         try:
-            self.__session.query(target_obj).filter(target_criteria).updata(data_dict)
-            self.__session.commit()
+            self.session.query(target_obj).filter(target_criteria).updata(data_dict)
+            self.session.commit()
         except Exception as e:
             log.error('{}'.format('', str(e)))
             raise Exception(str(e))
 
     def query_all_info(self, target_obj):
         try:
-            result = self.__session.query(target_obj).all()
+            result = self.session.query(target_obj).all()
             return result
         except Exception as e:
             log.error('{}'.format('', str(e)))

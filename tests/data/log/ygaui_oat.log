@@ -596,3 +596,32 @@ thriftpy.transport.TTransportException: TTransportException(message="Could not c
 [2017-09-22 16:26:05,611]-[INFO]-[102632]-[MainThread]-[106096]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
 [2017-09-22 16:40:50,740]-[INFO]-[114080]-[MainThread]-[116376]-[hbase_wrapper.py:12] # init hbase: 192.168.0.26
 [2017-09-22 16:51:42,217]-[INFO]-[122916]-[MainThread]-[113968]-[hbase_wrapper.py:25] # init hbase: 192.168.0.26
+[2017-09-25 20:40:13,424]-[INFO]-[10888]-[MainThread]-[4136]-[mysql_wrapper.py:13] # init mysql: 192.168.0.26
+[2017-09-25 20:41:04,529]-[INFO]-[11520]-[MainThread]-[5064]-[mysql_wrapper.py:13] # init mysql: 192.168.0.26
+[2017-09-25 20:43:48,867]-[INFO]-[10440]-[MainThread]-[1864]-[mysql_wrapper.py:13] # init mysql: 192.168.0.26
+[2017-09-25 20:47:15,913]-[INFO]-[13684]-[MainThread]-[8712]-[mysql_wrapper.py:13] # init mysql: 192.168.0.26
+[2017-09-25 20:47:15,977]-[ERROR]-[13684]-[MainThread]-[8712]-[mysql_wrapper.py:23] # 
+[2017-09-25 20:48:12,062]-[INFO]-[6384]-[MainThread]-[12976]-[mysql_wrapper.py:13] # init mysql: 192.168.0.26
+[2017-09-25 20:50:56,409]-[INFO]-[2328]-[MainThread]-[380]-[mysql_wrapper.py:13] # init mysql: 192.168.0.26
+[2017-09-25 20:52:45,999]-[INFO]-[14040]-[MainThread]-[4120]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
+[2017-09-25 20:57:18,959]-[INFO]-[11396]-[MainThread]-[1752]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
+[2017-09-25 20:57:19,025]-[ERROR]-[11396]-[MainThread]-[1752]-[mysql_wrapper.py:45] # 
+[2017-09-25 21:00:25,673]-[INFO]-[11296]-[MainThread]-[10752]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
+[2017-09-25 21:03:00,334]-[INFO]-[3840]-[MainThread]-[13168]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
+[2017-09-25 21:03:00,396]-[INFO]-[3840]-[MainThread]-[13168]-[mysql_wrapper.py:46] # None
+[2017-09-25 21:04:17,863]-[INFO]-[11412]-[MainThread]-[11284]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
+[2017-09-25 21:04:33,975]-[INFO]-[11412]-[MainThread]-[11284]-[mysql_wrapper.py:46] # None
+[2017-09-25 21:18:04,543]-[INFO]-[15324]-[MainThread]-[11296]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
+[2017-09-25 21:20:23,814]-[INFO]-[4136]-[MainThread]-[6436]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
+[2017-09-25 21:29:36,327]-[INFO]-[15072]-[MainThread]-[14492]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
+[2017-09-25 21:29:36,433]-[INFO]-[15072]-[MainThread]-[14492]-[mysql_wrapper.py:46] # None
+[2017-09-25 21:30:22,857]-[INFO]-[9140]-[MainThread]-[2784]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
+[2017-09-25 21:31:11,503]-[INFO]-[14280]-[MainThread]-[9896]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
+[2017-09-25 21:31:11,578]-[INFO]-[14280]-[MainThread]-[9896]-[mysql_wrapper.py:46] # None
+[2017-09-25 21:32:23,477]-[INFO]-[14184]-[MainThread]-[5372]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
+[2017-09-25 21:32:23,555]-[INFO]-[14184]-[MainThread]-[5372]-[mysql_wrapper.py:46] # None
+[2017-09-25 21:34:40,919]-[INFO]-[7924]-[MainThread]-[2908]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
+[2017-09-25 21:39:58,299]-[INFO]-[4412]-[MainThread]-[10312]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
+[2017-09-25 21:50:06,835]-[INFO]-[9204]-[MainThread]-[13700]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
+[2017-09-25 21:51:49,405]-[INFO]-[15316]-[MainThread]-[11168]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
+[2017-09-25 21:51:49,455]-[ERROR]-[15316]-[MainThread]-[11168]-[mysql_wrapper.py:42] # 
