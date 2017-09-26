@@ -2,7 +2,7 @@
 
 from threading import Thread
 
-from wrapper.hbase_wrapper import HbaseWrapper
+from wrappers.hbase_wrapper import HbaseWrapper
 
 hbaseWrapper = HbaseWrapper('192.168.0.26', 2)
 
