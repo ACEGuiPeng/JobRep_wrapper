@@ -4,10 +4,10 @@ import json
 from flask import request
 from flask_restful import Resource
 
-from service.material_manage_service import query_material, add_material, update_material, del_material
+from web.service.material_manage_service import query_material, add_material, update_material, del_material
 
 
-class Matirial(Resource):
+class Material(Resource):
     def get(self):
         result = query_material()
         return json.dumps(result)

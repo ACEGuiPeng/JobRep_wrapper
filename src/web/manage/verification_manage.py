@@ -3,7 +3,8 @@ import json
 
 from flask import request
 from flask_restful import Resource
-from service.case_manage_service import query_case, update_case_status
+
+from web.service.case_manage_service import query_case, update_case_status
 
 
 class CaseManage(Resource):

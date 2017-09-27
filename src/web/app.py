@@ -6,14 +6,16 @@ from tornado.ioloop import IOLoop
 from tornado.wsgi import WSGIContainer
 
 from common.const import CONST
-from orm.tables import Material
-from web.manage.fbad_case_manage import CaseManage
+from web.manage.fbad_matirial_manage import Material
+from web.manage.fbad_case_manage import Case
+from web.manage.verification_manage import CaseManage
 
 app = Flask(__name__)
 api = Api(app)
 
-api.add_resource(CaseManage, '/ygfbad/web/cases')
+api.add_resource(Case, '/ygfbad/web/cases')
 api.add_resource(Material, '/ygfbad/web/materials')
+api.add_resource(CaseManage, '/ygfbad/web/case_manage')
 
 
 @app.route('/')
