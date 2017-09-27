@@ -3,9 +3,12 @@
 
 import sys
 
+import time
+from threading import Thread
+
 from coverage import coverage
 
-from web.app import run_web_service
+from web.app import run_web_service, stop_web_service
 
 # 设置覆盖测试的初始状态
 if __name__ == '__main__':
@@ -23,7 +26,9 @@ if __name__ == '__main__':
         cov = coverage(branch=True, source=["../src/wrappers", "../src/web"])
         cov.start()
 
-    run_web_service()
+    Thread(target=run_web_service).start()
+    time.sleep(5)
+    Thread(target=stop_web_service).start()
 
     # coverage结束
     if undebug:

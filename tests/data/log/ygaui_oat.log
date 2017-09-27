@@ -625,3 +625,5 @@ thriftpy.transport.TTransportException: TTransportException(message="Could not c
 [2017-09-25 21:50:06,835]-[INFO]-[9204]-[MainThread]-[13700]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
 [2017-09-25 21:51:49,405]-[INFO]-[15316]-[MainThread]-[11168]-[mysql_wrapper.py:27] # init mysql: 192.168.0.26
 [2017-09-25 21:51:49,455]-[ERROR]-[15316]-[MainThread]-[11168]-[mysql_wrapper.py:42] # 
+[2017-09-27 20:16:39,237]-[INFO]-[13616]-[MainThread]-[16500]-[mysql_wrapper.py:29] # init mysql: 192.168.0.26
+[2017-09-27 20:16:39,322]-[INFO]-[13616]-[MainThread]-[16500]-[mysql_wrapper.py:29] # init mysql: 192.168.0.26

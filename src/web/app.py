@@ -1,4 +1,7 @@
 # -*- coding:utf-8 -*-
+from threading import Thread
+
+import time
 from flask import Flask
 from flask_restful import Api
 from tornado.httpserver import HTTPServer
@@ -23,12 +26,20 @@ def alive():
     return 'yes'
 
 
+loop = IOLoop.instance()
+
+
 def run_web_service():
     http_server = HTTPServer(WSGIContainer(app))
     http_server.bind(CONST.WEB_SERVER_PORT)
     http_server.start(1)
-    IOLoop.instance().start()
+    loop.start()
+
+
+def stop_web_service():
+    loop.stop()
 
 
 if __name__ == '__main__':
-    run_web_service()
+    Thread(target=run_web_service).start()
+    time.sleep(5)
