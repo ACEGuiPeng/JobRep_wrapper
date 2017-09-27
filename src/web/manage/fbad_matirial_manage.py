@@ -1,18 +1,28 @@
 # -*- coding:utf-8 -*-
+import json
+
 from flask import request
 from flask_restful import Resource
 
+from service.material_manage_service import query_material, add_material, update_material, del_material
 
-class MatirialManage(Resource):
+
+class Matirial(Resource):
     def get(self):
-        pass
+        result = query_material()
+        return json.dumps(result)
 
     def post(self):
         json_data = request.get_json(force=True)
-
-
-    def delete(self):
-        pass
+        message = add_material(json_data)
+        return json.dumps({'message': message})
 
     def put(self):
-        pass
+        json_data = request.get_json(force=True)
+        message = update_material(json_data)
+        return json.dumps({'message': message})
+
+    def delete(self):
+        json_data = request.get_json(force=True)
+        message = del_material(json_data)
+        return json.dumps({'message': message})

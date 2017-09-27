@@ -42,5 +42,11 @@ def query_case():
     with mysql_wrapper.get_session() as session:
         obj_list = session.query(AdCase).all()
         print(obj_list)
-        result_dict = [{key:obj.__dict__[key] for key in obj.__dict__ if key in column_list} for obj in obj_list]
+        result_dict = [{key: obj.__dict__[key] for key in obj.__dict__ if key in column_list} for obj in obj_list]
     return result_dict
+
+
+def update_case_status(dict_data):
+    with mysql_wrapper.get_session() as session:
+        session.query(AdCase).filter_by(sid=dict_data['sid']).update(status=dict_data['status'])
+    return 'success'

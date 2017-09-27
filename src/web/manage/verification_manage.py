@@ -1,22 +1,17 @@
 # -*- coding:utf-8 -*-
+import json
 
+from flask import request
 from flask_restful import Resource
-
-todoList = {
-    '0': 'show',
-    '1': 'pass',
-    '-1': 'reject'
-}
+from service.case_manage_service import query_case, update_case_status
 
 
 class CaseManage(Resource):
-    def get(self, case_id, opt_num):
-        if opt_num == '0':
-            pass
-        elif opt_num == '1':
-            pass
-        elif opt_num == '-1':
-            pass
+    def get(self):
+        result = query_case()
+        return json.dumps(result)
 
-    def post(self):
-        pass
+    def put(self):
+        json_data = request.get_json(force=True)
+        message = update_case_status(json_data)
+        return json.dumps({'message': message})
