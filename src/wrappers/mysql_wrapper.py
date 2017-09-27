@@ -1,7 +1,9 @@
 # -*- coding: UTF-8 -*-
+import contextlib
 import threading
+import traceback
 
-from sqlalchemy import create_engine, MetaData
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 from common.const import CONST
@@ -40,44 +42,14 @@ class MysqlWrapper(object):
 
         except Exception as e:
             log.error('{}'.format('', str(e)))
-            raise Exception(str(e))
+            raise traceback.format_exc(30)
 
-    def add_info(self, table_obj):
+    @contextlib.contextmanager
+    def get_session(self):
         try:
-            self.session.add(table_obj)
+            # with 代码执行的部分
+            yield self.session
+            # with包裹的代码
             self.session.commit()
-        except Exception as e:
-            log.error('{}'.format('', str(e)))
-            raise Exception(str(e))
-
-    def add_info_list(self, table_obj_list):
-        try:
-            self.session.add_all(table_obj_list)
-            self.session.commit()
-        except Exception as e:
-            log.error('{}'.format('', str(e)))
-            raise Exception(str(e))
-
-    def delete_info(self, table_obj):
-        try:
-            self.session.delete(table_obj)
-            self.session.commit()
-        except Exception as e:
-            log.error('{}'.format('', str(e)))
-            raise Exception(str(e))
-
-    def update_info(self, target_obj, target_criteria, data_dict):
-        try:
-            self.session.query(target_obj).filter(target_criteria).updata(data_dict)
-            self.session.commit()
-        except Exception as e:
-            log.error('{}'.format('', str(e)))
-            raise Exception(str(e))
-
-    def query_all_info(self, target_obj):
-        try:
-            result = self.session.query(target_obj).all()
-            return result
-        except Exception as e:
-            log.error('{}'.format('', str(e)))
-            raise Exception(str(e))
+        except Exception:
+            log.error(traceback.format_exc(30))

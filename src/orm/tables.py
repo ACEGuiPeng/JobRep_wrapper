@@ -14,6 +14,7 @@ class Material(Base):
 
 
 class AdCase(Base):
+
     __tablename__ = 'fbad_case'
 
     sid = Column(String(128), primary_key=True)
@@ -23,7 +24,6 @@ class AdCase(Base):
     material_timestamp = Column(String(128))
     status = Column(String(128))
     bidding = Column(String(2048))
-
 
 class LandingPage(Base):
     __tablename__ = 'fbad_landing_page'

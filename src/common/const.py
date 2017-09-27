@@ -76,5 +76,8 @@ class _CONST(object):
     MYSQL_PWD = 'root'
     DB_URL = '192.168.0.26'
 
+    # tornado
+    WEB_SERVER_PORT = 5000
+
 
 CONST = _CONST()

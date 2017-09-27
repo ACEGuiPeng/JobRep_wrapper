@@ -1,17 +1,28 @@
 # -*- coding:utf-8 -
-from flask import Flask
+
+from flask import Flask, jsonify, request
 from flask_restful import Api, Resource
 
-app = Flask('asdasd')
+app = Flask(__name__)
 api = Api(app)
 
 
-class R(Resource):
-    def get(self):
-        return {'hello': 'world'}
+# parser = reqparse.RequestParser()
+# parser.add_argument('username', type=unicode, location='json')
+# parser.add_argument('password', type=unicode, location='json')
+
+class HelloWorld(Resource):
+    def post(self):
+        json_data = request.get_json(force=True)
+        un = json_data['username']
+        pw = json_data['password']
+        # args = parser.parse_args()
+        # un = str(args['username'])
+        # pw = str(args['password'])
+        return jsonify(u=un, p=pw)
 
 
-api.add_resource(R, '/')
+api.add_resource(HelloWorld, '/testing')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5444, debug=True)
