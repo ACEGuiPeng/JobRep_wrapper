@@ -19,8 +19,8 @@ class Material(Base):
     keywords = Column(String(2048))
 
 
-class AdRecord(Base):
-    __tablename__ = 'ad_record'
+class MaterialRecord(Base):
+    __tablename__ = 'material_record'
 
     id = Column(String(32), primary_key=True)
     asin = Column(String(32))
@@ -44,7 +44,7 @@ class Resource(Base):
     addr = Column(String(2048))
 
 
-class ResouceRecord(Base):
+class ResourceRecord(Base):
     __tablename__ = 'resource_record'
 
     id = Column(String(32), primary_key=True)

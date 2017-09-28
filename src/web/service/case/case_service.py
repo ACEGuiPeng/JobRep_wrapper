@@ -1,9 +1,10 @@
 # -*- coding:utf-8 -*-
+from common.const import CONST
 from orm.tables import Base, AdCase
 from wrappers.mysql_wrapper import MysqlWrapper
 
 mysql_wrapper = MysqlWrapper()
-mysql_wrapper.connect_mysql('test_db', Base)
+mysql_wrapper.connect_mysql(CONST.DB_NAME, Base)
 
 
 def add_case(dict_data):
