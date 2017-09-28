@@ -6,32 +6,83 @@ Base = declarative_base()
 
 
 class Material(Base):
-    __tablename__ = 'fbad_material'
+    __tablename__ = 'product_materials'
 
-    sid = Column(String(128), primary_key=True)
-    timestamp = Column(String(128), primary_key=True)
-    content = Column(String(2048))
+    asin = Column(String(32), primary_key=True)
+    uid = Column(String(32))
+    update_time = Column(String(32))
+    name = Column(String(1024))
+    resource = Column(String(32))
+    title = Column(String(1024))
+    ad_text = Column(String(2048))
+    links = Column(String(2048))
+    keywords = Column(String(2048))
 
 
-class AdCase(Base):
-    __tablename__ = 'fbad_case'
+class AdRecord(Base):
+    __tablename__ = 'ad_record'
 
-    sid = Column(String(128), primary_key=True)
-    timestamp = Column(String(64), primary_key=True)
-    case_name = Column(String(256))
-    target_id = Column(String(128))
-    material_timestamp = Column(String(128))
-    status = Column(String(128))
-    bidding = Column(String(2048))
+    id = Column(String(32), primary_key=True)
+    asin = Column(String(32))
+    record_time = Column(String(32))
+    resource = Column(String(32))
+    title = Column(String(1024))
+    ad_text = Column(String(2048))
+    type = Column(String(2048))
+    link = Column(String(2048))
+
+
+class Resource(Base):
+    __tablename__ = 'resource'
+
+    id = Column(String(32), primary_key=True)
+    uid = Column(String(32))
+    asin = Column(String(32))
+    update_time = Column(String(32))
+    type = Column(String(16))
+    keywords = Column(String(2048))
+    addr = Column(String(2048))
+
+
+class ResouceRecord(Base):
+    __tablename__ = 'resource_record'
+
+    id = Column(String(32), primary_key=True)
+    depot_id = Column(String(32))
+    uid = Column(String(32))
+    asin = Column(String(32))
+    case_id = Column(String(32))
 
 
 class LandingPage(Base):
-    __tablename__ = 'fbad_landing_page'
+    __tablename__ = 'landing_page'
 
-    url = Column(String(128), primary_key=True)
-    template = Column(String(128))
-    photo_addrs = Column(String(1024))
-    link = Column(String(1024))
-    ad_text = Column(String(2048))
-    discount = Column(Integer())
-    keywords = Column(String(128))
+    id = Column(String(32), primary_key=True)
+    uid = Column(String(32))
+    update_time = Column(String(32))
+    template_id = Column(String(32))
+    attributes = Column(String(2048))
+
+
+class LandingPageRecord(Base):
+    __tablename__ = 'landing_page_record'
+
+    id = Column(String(32), primary_key=True)
+    depot_id = Column(String(32))
+    uid = Column(String(32))
+    asins = Column(String(32))
+    update_time = Column(String(32))
+    template_id = Column(String(32))
+    attributes = Column(String(2048))
+
+
+class AdCase(Base):
+    __tablename__ = 'case'
+
+    id = Column(String(32), primary_key=True)
+    uid = Column(String(32))
+    type = Column(String(32))
+    ad_records = Column(String(32))
+    target_id = Column(String(32))
+    status = Column(String(32))
+    bidding = Column(String(2048))

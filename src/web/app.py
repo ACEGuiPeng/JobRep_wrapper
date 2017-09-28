@@ -9,9 +9,9 @@ from tornado.ioloop import IOLoop
 from tornado.wsgi import WSGIContainer
 
 from common.const import CONST
-from web.manage.fbad_matirial_manage import Material
-from web.manage.fbad_case_manage import Case
-from web.manage.verification_manage import CaseManage
+from web.controller.fbad_material_manage import Material
+from web.controller.fbad_case_manage import Case
+from web.controller.verification_manage import CaseManage
 
 app = Flask(__name__)
 api = Api(app)

@@ -55,7 +55,6 @@ def add_stream_handler(logger, formatter):
 def init_logger(log_level):
     logger_name = get_logger_name()
     logger = logging.getLogger(logger_name)
-
     formatter = logging.Formatter(get_logger_format())
     add_rotating_file_handler(logger, logger_name, formatter)
     add_stream_handler(logger, formatter)
@@ -65,3 +64,4 @@ def init_logger(log_level):
 
 
 log = init_logger(logging.INFO)
+
