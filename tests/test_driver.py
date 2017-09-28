@@ -8,6 +8,7 @@ from threading import Thread
 
 from coverage import coverage
 
+from test_api.send_json_data import send_json_data
 from web.app import run_web_service, stop_web_service
 
 # 设置覆盖测试的初始状态
@@ -27,7 +28,9 @@ if __name__ == '__main__':
         cov.start()
 
     Thread(target=run_web_service).start()
-    time.sleep(5)
+    time.sleep(3)
+    send_json_data()
+    time.sleep(3)
     Thread(target=stop_web_service).start()
 
     # coverage结束

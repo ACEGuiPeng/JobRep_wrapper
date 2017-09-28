@@ -36,6 +36,5 @@ def query_material():
     ]
     with mysql_wrapper.get_session() as session:
         obj_list = session.query(Material).all()
-        print(obj_list)
         result_dict = [{key: obj.__dict__[key] for key in obj.__dict__ if key in column_list} for obj in obj_list]
     return result_dict

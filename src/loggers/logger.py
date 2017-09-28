@@ -7,6 +7,9 @@ from logging import handlers
 
 from src.common.const import CONST
 
+logging.basicConfig()
+logger = logging.getLogger('sqlalchemy.engine').setLevel(logging.INFO)
+
 
 def get_logger_name():
     return CONST.SYSTEM_NAME + '_' + CONST.SUBSYSTEM_NAME

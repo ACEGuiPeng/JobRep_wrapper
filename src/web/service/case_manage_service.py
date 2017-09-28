@@ -1,5 +1,4 @@
 # -*- coding:utf-8 -*-
-from loggers.logger import log
 from orm.tables import Base, AdCase
 from wrappers.mysql_wrapper import MysqlWrapper
 
@@ -41,7 +40,6 @@ def query_case():
     ]
     with mysql_wrapper.get_session() as session:
         obj_list = session.query(AdCase).all()
-        print(obj_list)
         result_dict = [{key: obj.__dict__[key] for key in obj.__dict__ if key in column_list} for obj in obj_list]
     return result_dict
 
