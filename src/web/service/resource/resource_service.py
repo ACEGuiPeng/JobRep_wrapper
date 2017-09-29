@@ -29,7 +29,7 @@ def update_resource(dict_data):
     return 'success'
 
 
-def select_resource():
+def select_resource(uid=None, asin=None, sorted_way=-1, key_words=None):
     column_list = [
         'id',
         'uid',
@@ -40,6 +40,13 @@ def select_resource():
         'addr'
     ]
     with mysql_wrapper.session_scope() as session:
-        obj_list = session.query(Resources).all()
+        if sorted_way == -1:
+            exce_query = session.query(Resources).order_by(Resources.update_time.desc())
+        else:
+            exce_query = session.query(Resources).order_by(Resources.update_time.asc())
+
+        obj_list = exce_query.filter_by(uid=uid, asin=asin).filter(
+            Resources.keywords.like("%{}%".format(key_words))).all()
+
         result_dict = [{key: obj.__dict__[key] for key in obj.__dict__ if key in column_list} for obj in obj_list]
     return result_dict

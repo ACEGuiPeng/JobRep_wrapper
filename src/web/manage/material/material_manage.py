@@ -10,10 +10,11 @@ from web.service.material.material_service import *
 class Material(Resource):
     def get(self):
         data_dict = request.args
+        asin = data_dict['asin']
         uid = data_dict['uid']
         sorted_way = data_dict['sorted_way']
         key_words = data_dict['key_words']
-        result = select_material(uid, sorted_way, key_words)
+        result = select_material(asin, uid, sorted_way, key_words)
         return json.dumps(result)
 
     def post(self):

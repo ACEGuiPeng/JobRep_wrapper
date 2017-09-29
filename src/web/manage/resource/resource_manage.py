@@ -9,7 +9,12 @@ from web.service.resource.resource_service import *
 
 class Resources(Resource):
     def get(self):
-        result = select_resource()
+        data_dict = request.args
+        uid = data_dict['uid']
+        asin = data_dict['asin']
+        sorted_way = data_dict['sorted_way']
+        key_words = data_dict['key_words']
+        result = select_resource(uid, asin, sorted_way, key_words)
         return json.dumps(result)
 
     def post(self):

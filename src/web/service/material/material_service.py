@@ -29,7 +29,7 @@ def update_material(dict_data):
     return 'success'
 
 
-def select_material(uid=None, sorted_way=-1, key_words=None):
+def select_material(asin=None, uid=None, sorted_way=-1, key_words=None):
     '''
     :param uid:
     :param sorted_way: 默认值-1表示倒序排列，1表示正序排列
@@ -38,7 +38,7 @@ def select_material(uid=None, sorted_way=-1, key_words=None):
     column_list = [
         'asin',
         'uid',
-        'upda_time',
+        'update_time',
         'name',
         'price',
         'title',
@@ -52,9 +52,7 @@ def select_material(uid=None, sorted_way=-1, key_words=None):
         else:
             exc_query = session.query(Material).order_by(Material.update_time.asc())
 
-        if uid is None:
-            obj_list = exc_query.filter(Material.keywords.like("%{}%".format(key_words))).all()
-        else:
-            obj_list = exc_query.filter_by(uid=uid).filter(Material.keywords.like("%{}%".format(key_words))).all()
+        obj_list = exc_query.filter_by(asin=asin, uid=uid).filter(
+            Material.keywords.like("%{}%".format(key_words))).all()
         result_dict = [{key: obj.__dict__[key] for key in obj.__dict__ if key in column_list} for obj in obj_list]
     return result_dict
