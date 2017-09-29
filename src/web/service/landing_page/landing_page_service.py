@@ -29,7 +29,7 @@ def update_landing_page(dict_data):
     return 'success'
 
 
-def select_landing_page():
+def select_landing_page(sorted_way=-1):
     column_list = [
         'id',
         'uid',
@@ -38,6 +38,10 @@ def select_landing_page():
         'attributes',
     ]
     with mysql_wrapper.session_scope() as session:
-        obj_list = session.query(LandingPage).all()
+        exec_query = session.query(LandingPage)
+        if sorted_way == -1:
+            obj_list = exec_query.order_by(LandingPage.update_time.desc()).all()
+        else:
+            obj_list = exec_query.order_by(LandingPage.update_time.asc()).all()
         result_dict = [{key: obj.__dict__[key] for key in obj.__dict__ if key in column_list} for obj in obj_list]
     return result_dict

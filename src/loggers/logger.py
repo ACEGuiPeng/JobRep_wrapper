@@ -7,7 +7,6 @@ from logging import handlers
 
 from common.const import CONST
 
-
 def get_logger_name():
     return CONST.SYSTEM_NAME + '_' + CONST.SUBSYSTEM_NAME
 
@@ -60,5 +59,3 @@ def init_logger(log_level):
 
 
 log = init_logger(logging.INFO)
-
-

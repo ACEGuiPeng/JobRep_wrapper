@@ -9,7 +9,9 @@ from web.service.landing_page.landing_page_service import *
 
 class LandingPage(Resource):
     def get(self):
-        result = select_landing_page()
+        data_dict = request.args
+        sorted_way = data_dict['sorted_way']
+        result = select_landing_page(sorted_way)
         return json.dumps(result)
 
     def post(self):

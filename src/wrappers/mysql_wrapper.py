@@ -1,5 +1,6 @@
 # -*- coding: UTF-8 -*-
 import contextlib
+import logging
 import threading
 import traceback
 
@@ -8,6 +9,9 @@ from sqlalchemy.orm import sessionmaker
 
 from common.const import CONST
 from loggers.logger import log
+
+logging.basicConfig()
+logging.getLogger('sqlalchemy.engine').setLevel(logging.INFO)
 
 Lock = threading.Lock()
 

@@ -12,7 +12,8 @@ class Material(Resource):
         data_dict = request.args
         uid = data_dict['uid']
         sorted_way = data_dict['sorted_way']
-        result = select_material(uid,sorted_way)
+        key_words = data_dict['key_words']
+        result = select_material(uid, sorted_way, key_words)
         return json.dumps(result)
 
     def post(self):
@@ -25,7 +26,7 @@ class Material(Resource):
         message = update_material(json_data)
         return json.dumps({'message': message})
 
-        # def delete(self):
-        #     json_data = request.get_json(force=True)
-        #     message = del_material(json_data)
-        #     return json.dumps({'message': message})
+    def delete(self):
+        json_data = request.get_json(force=True)
+        message = del_material(json_data)
+        return json.dumps({'message': message})
