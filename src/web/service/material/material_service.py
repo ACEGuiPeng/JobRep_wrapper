@@ -1,13 +1,14 @@
 # -*- coding:utf-8 -*-
 from orm.tables import Base, Material
 from wrappers.mysql_wrapper import MysqlWrapper
+from common.const import CONST
 
 mysql_wrapper = MysqlWrapper()
-mysql_wrapper.connect_mysql('test_db', Base)
+mysql_wrapper.connect_mysql(CONST.DB_NAME)
 
 
-def add_material(dict_data):
-    with mysql_wrapper.get_session() as session:
+def insert_material(dict_data):
+    with mysql_wrapper.session_scope() as session:
         ad_material = Material()
         ad_material.__dict__.update(dict_data)
         session.add(ad_material)
@@ -16,25 +17,44 @@ def add_material(dict_data):
 
 
 def del_material(dict_data):
-    with mysql_wrapper.get_session() as session:
-        target_obj = session.query(Material).filter_by(sid=dict_data['sid']).first()
+    with mysql_wrapper.session_scope() as session:
+        target_obj = session.query(Material).filter_by(asin=dict_data['asin']).first()
         session.delete(target_obj)
     return 'success'
 
 
 def update_material(dict_data):
-    with mysql_wrapper.get_session() as session:
-        session.query(Material).filter_by(sid=dict_data['sid']).update(dict_data)
+    with mysql_wrapper.session_scope() as session:
+        session.query(Material).filter_by(asin=dict_data['asin']).update(dict_data)
     return 'success'
 
 
-def query_material():
+def select_material(uid=None, sorted_way=-1):
+    '''
+    :param uid:
+    :param sorted_way: 默认值-1表示倒序排列，1表示正序排列
+    :return:
+    '''
     column_list = [
-        'sid',
-        'timestamp',
-        'content'
+        'asin',
+        'uid',
+        'upda_time',
+        'name',
+        'price',
+        'title',
+        'ad_text',
+        'links',
+        'keywords'
     ]
-    with mysql_wrapper.get_session() as session:
-        obj_list = session.query(Material).all()
+    with mysql_wrapper.session_scope() as session:
+        if sorted_way == -1:
+            exc_query = session.query(Material).order_by(Material.update_time.desc())
+        else:
+            exc_query = session.query(Material).order_by(Material.update_time.asc())
+
+        if uid is None:
+            obj_list = exc_query.all()
+        else:
+            obj_list = exc_query.filter_by(uid=uid).all()
         result_dict = [{key: obj.__dict__[key] for key in obj.__dict__ if key in column_list} for obj in obj_list]
     return result_dict

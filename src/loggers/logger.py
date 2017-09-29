@@ -5,10 +5,7 @@ import os
 from distutils.dir_util import mkpath
 from logging import handlers
 
-from src.common.const import CONST
-
-logging.basicConfig()
-logger = logging.getLogger('sqlalchemy.engine').setLevel(logging.INFO)
+from common.const import CONST
 
 
 def get_logger_name():
@@ -58,10 +55,10 @@ def init_logger(log_level):
     formatter = logging.Formatter(get_logger_format())
     add_rotating_file_handler(logger, logger_name, formatter)
     add_stream_handler(logger, formatter)
-
     logger.setLevel(log_level)
     return logger
 
 
 log = init_logger(logging.INFO)
+
 

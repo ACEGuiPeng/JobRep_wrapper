@@ -28,7 +28,14 @@ class MysqlWrapper(object):
         self.engine = None
         log.info('init mysql: {}'.format(CONST.DB_URL))
 
-    def connect_mysql(self, db_name, base):
+    def create_tables(self, base):
+        try:
+            log.info('creating sql tables.')
+            base.metadata.create_all(self.engine)
+        except Exception as e:
+            log.error('create tables failed , {}'.format('', str(e)))
+
+    def connect_mysql(self, db_name):
         try:
             self.engine = create_engine(
                 'mysql+mysqlconnector://{username}:{pwd}@{db_url}/{db_name}'.format(
@@ -37,18 +44,20 @@ class MysqlWrapper(object):
             DB_Session = sessionmaker(bind=self.engine)
 
             self.session = DB_Session()
-            base.metadata.create_all(self.engine)
 
         except Exception as e:
             log.error('{}'.format('', str(e)))
             raise traceback.format_exc(30)
 
     @contextlib.contextmanager
-    def get_session(self):
+    def session_scope(self):
         try:
             # with 代码执行的部分
             yield self.session
             # with包裹的代码
             self.session.commit()
         except Exception:
+            self.session.rollback()
             log.error(traceback.format_exc(30))
+        finally:
+            self.session.close()

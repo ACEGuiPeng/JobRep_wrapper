@@ -1,6 +1,3 @@
-# -*- coding:utf-8 -*-
-
-
 class _CONST(object):
     def __setattr__(self, *_):
         raise SyntaxError('Trying to change a constant value')
@@ -73,8 +70,8 @@ class _CONST(object):
 
     # mysql
     MYSQL_USERNAME = 'root'
-    MYSQL_PWD = 'root'
-    DB_URL = '192.168.0.26'
+    MYSQL_PWD = '123456'
+    DB_URL = '192.168.0.16'
     DB_NAME = 'test_db'
 
     # tornado
