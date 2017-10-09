@@ -12,6 +12,12 @@ from common.const import CONST
 from web.manage.admin.verification_manage import CaseManage
 from web.manage.case.case_manage import Case
 from web.manage.material.material_manage import Material
+from web.manage.material.material_record_manage import MaterialRecord
+from web.manage.img.img_manage import Img
+from web.manage.landing_page.landing_page_manage import LandingPage
+from web.manage.landing_page.landing_page_record import LandingPageRecord
+from web.manage.resource.resource_manage import Resources
+from web.manage.resource.resource_record_manage import ResourcesRecord
 
 app = Flask(__name__)
 api = Api(app)
@@ -19,10 +25,12 @@ api = Api(app)
 api.add_resource(Case, '/ygfbad/web/case')
 api.add_resource(CaseManage, '/ygfbad/web/case_manage')
 api.add_resource(Material, '/ygfbad/web/material')
-api.add_resource()
-api.add_resource(Case, '/ygfbad/web/case')
-api.add_resource(CaseManage, '/ygfbad/web/case_manage')
-api.add_resource(Material, '/ygfbad/web/material')
+api.add_resource(MaterialRecord, '/ygfbad/web/mater_record')
+api.add_resource(LandingPage, '/ygfbad/web/land_page')
+api.add_resource(LandingPageRecord, '/ygfbad/web/lp_record')
+api.add_resource(Img, '/ygfbad/web/img')
+api.add_resource(Resources, '/ygfbad/web/res')
+api.add_resource(ResourcesRecord, '/ygfbad/web/res_record')
 
 
 @app.route('/')

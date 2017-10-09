@@ -77,5 +77,11 @@ class _CONST(object):
     # tornado
     WEB_SERVER_PORT = 5000
 
+    # HDFS
+    HDFS_URL = 'http://192.168.0.222:50070'
+    HDFS_USER = 'yiguo'
+    UPLOAD_FOLDER = '/home/yiguo/yiguo_fbad/uploads'
+    ALLOW_EXTENSIONS = ['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif']
+
 
 CONST = _CONST()

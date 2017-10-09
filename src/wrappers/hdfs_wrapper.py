@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 import traceback
 
-import hdfs
+from hdfs import InsecureClient
 from os.path import exists
 
 from common.const import CONST
@@ -13,36 +13,31 @@ class HdfsWrapper:
         self.client = None
 
     def connect_hdfs(self):
-        self.client = hdfs.Client(CONST.HDFS_URL,CONST.HDFS_ROOT_PATH)
+        self.client = InsecureClient(CONST.HDFS_URL, user=CONST.HDFS_USER)
 
     def mkdir_hdfs(self, path):
         if not exists(path):
-            self.client.mkdirs(path)
+            self.client.makedirs(path)
 
     def list_hdfs(self, path):
         return self.client.list(path)
 
-    def read_hdfs(self, path):
+    def read_hdfs(self, hdfs_path):
         try:
-            if exists(path):
-                with self.client.read(path)as reader:
+            if exists(hdfs_path):
+                with self.client.read(hdfs_path)as reader:
                     return reader.read()
         except:
             log.error(traceback.format_exc())
             self.connect_hdfs()
             log.error('reconnect hdfs...')
 
-    def write_hdfs(self, path, value, overwrite=True):
+    def write_hdfs(self, hdfs_path, data, overwrite=False):
         try:
-            with self.client.write(path, overwrite=overwrite)as writer:
-                writer.write(value)
+            with self.client.write(hdfs_path, overwrite=overwrite)as writer:
+                writer.write(data)
+            return hdfs_path
         except:
             log.error(traceback.format_exc())
             self.connect_hdfs()
             log.error('reconnect hdfs...')
-
-    def upload_hdfs(self):
-        pass
-
-    def download_hdfs(self):
-        pass

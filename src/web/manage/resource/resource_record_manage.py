@@ -7,7 +7,7 @@ from flask_restful import Resource
 from web.service.resource.resource_record_service import *
 
 
-class Resources(Resource):
+class ResourcesRecord(Resource):
     def get(self):
         result = select_resource_record()
         return json.dumps(result)

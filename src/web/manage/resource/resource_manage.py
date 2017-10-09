@@ -8,6 +8,9 @@ from web.service.resource.resource_service import *
 
 
 class Resources(Resource):
+    def allowed_file(self, filename):
+        return '.' in filename and filename.split('.', 1)[1] in CONST.ALLOW_EXTENSIONS
+
     def get(self):
         data_dict = request.args
         uid = data_dict['uid']
@@ -18,9 +21,12 @@ class Resources(Resource):
         return json.dumps(result)
 
     def post(self):
-        json_data = request.get_json(force=True)
-        message = insert_resource(json_data)
-        return json.dumps({'message': message})
+        # 上传resource
+        up_file = request.files['file']
+        form_data = request.form
+        if up_file and self.allowed_file(up_file.filename):
+            upload_path = upload_files(up_file, form_data)
+            return json.dumps({'file_path': upload_path})
 
     def put(self):
         json_data = request.get_json(force=True)

@@ -627,3 +627,429 @@ thriftpy.transport.TTransportException: TTransportException(message="Could not c
 [2017-09-25 21:51:49,455]-[ERROR]-[15316]-[MainThread]-[11168]-[mysql_wrapper.py:42] # 
 [2017-09-27 20:16:39,237]-[INFO]-[13616]-[MainThread]-[16500]-[mysql_wrapper.py:29] # init mysql: 192.168.0.26
 [2017-09-27 20:16:39,322]-[INFO]-[13616]-[MainThread]-[16500]-[mysql_wrapper.py:29] # init mysql: 192.168.0.26
+[2017-09-30 17:03:33,615]-[ERROR]-[15072]-[MainThread]-[15620]-[hdfs_wrapper.py:40] # Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "D:\Computer_Scientist_Tools\Python\lib\socket.py", line 728, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\All_Projects\JobWorkspace\wrappers\src\wrappers\hdfs_wrapper.py", line 38, in write_hdfs
+    writer.write(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 100, in __exit__
+    raise self._err # pylint: disable=raising-bad-type
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 72, in consumer
+    self._consumer(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 464, in consumer
+    data=(c.encode(encoding) for c in _data) if encoding else _data,
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 207, in _request
+    **kwargs
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\adapters.py", line 458, in send
+    low_conn.endheaders()
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 1079, in endheaders
+    self._send_output(message_body)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 911, in _send_output
+    self.send(msg)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 854, in send
+    self.connect()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 166, in connect
+    conn = self._new_conn()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001B6BF773898>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+[2017-09-30 17:03:33,616]-[ERROR]-[15072]-[MainThread]-[15620]-[hdfs_wrapper.py:42] # reconnect hdfs...
+[2017-09-30 17:08:28,207]-[ERROR]-[7296]-[MainThread]-[7840]-[hdfs_wrapper.py:40] # Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "D:\Computer_Scientist_Tools\Python\lib\socket.py", line 728, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\All_Projects\JobWorkspace\wrappers\src\wrappers\hdfs_wrapper.py", line 38, in write_hdfs
+    writer.write(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 100, in __exit__
+    raise self._err # pylint: disable=raising-bad-type
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 72, in consumer
+    self._consumer(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 464, in consumer
+    data=(c.encode(encoding) for c in _data) if encoding else _data,
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 207, in _request
+    **kwargs
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\adapters.py", line 458, in send
+    low_conn.endheaders()
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 1079, in endheaders
+    self._send_output(message_body)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 911, in _send_output
+    self.send(msg)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 854, in send
+    self.connect()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 166, in connect
+    conn = self._new_conn()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001D83F49EAC8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+[2017-09-30 17:08:28,208]-[ERROR]-[7296]-[MainThread]-[7840]-[hdfs_wrapper.py:42] # reconnect hdfs...
+[2017-09-30 17:08:53,994]-[ERROR]-[2528]-[MainThread]-[10500]-[hdfs_wrapper.py:40] # Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "D:\Computer_Scientist_Tools\Python\lib\socket.py", line 728, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\All_Projects\JobWorkspace\wrappers\src\wrappers\hdfs_wrapper.py", line 38, in write_hdfs
+    writer.write(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 100, in __exit__
+    raise self._err # pylint: disable=raising-bad-type
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 72, in consumer
+    self._consumer(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 464, in consumer
+    data=(c.encode(encoding) for c in _data) if encoding else _data,
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 207, in _request
+    **kwargs
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\adapters.py", line 458, in send
+    low_conn.endheaders()
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 1079, in endheaders
+    self._send_output(message_body)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 911, in _send_output
+    self.send(msg)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 854, in send
+    self.connect()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 166, in connect
+    conn = self._new_conn()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002A89AEEDCC0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+[2017-09-30 17:08:53,995]-[ERROR]-[2528]-[MainThread]-[10500]-[hdfs_wrapper.py:42] # reconnect hdfs...
+[2017-09-30 17:24:33,339]-[ERROR]-[10216]-[MainThread]-[14044]-[hdfs_wrapper.py:40] # Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "D:\Computer_Scientist_Tools\Python\lib\socket.py", line 728, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\All_Projects\JobWorkspace\wrappers\src\wrappers\hdfs_wrapper.py", line 38, in write_hdfs
+    writer.write(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 100, in __exit__
+    raise self._err # pylint: disable=raising-bad-type
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 72, in consumer
+    self._consumer(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 464, in consumer
+    data=(c.encode(encoding) for c in _data) if encoding else _data,
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 207, in _request
+    **kwargs
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\adapters.py", line 458, in send
+    low_conn.endheaders()
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 1079, in endheaders
+    self._send_output(message_body)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 911, in _send_output
+    self.send(msg)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 854, in send
+    self.connect()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 166, in connect
+    conn = self._new_conn()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001D09CBBDCC0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+[2017-09-30 17:24:33,341]-[ERROR]-[10216]-[MainThread]-[14044]-[hdfs_wrapper.py:42] # reconnect hdfs...
+[2017-09-30 17:27:00,151]-[ERROR]-[13792]-[MainThread]-[4120]-[hdfs_wrapper.py:40] # Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "D:\Computer_Scientist_Tools\Python\lib\socket.py", line 728, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\All_Projects\JobWorkspace\wrappers\src\wrappers\hdfs_wrapper.py", line 38, in write_hdfs
+    writer.write(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 100, in __exit__
+    raise self._err # pylint: disable=raising-bad-type
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 72, in consumer
+    self._consumer(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 464, in consumer
+    data=(c.encode(encoding) for c in _data) if encoding else _data,
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 207, in _request
+    **kwargs
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\adapters.py", line 458, in send
+    low_conn.endheaders()
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 1079, in endheaders
+    self._send_output(message_body)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 911, in _send_output
+    self.send(msg)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 854, in send
+    self.connect()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 166, in connect
+    conn = self._new_conn()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000216212BEAC8>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+[2017-09-30 17:27:00,152]-[ERROR]-[13792]-[MainThread]-[4120]-[hdfs_wrapper.py:42] # reconnect hdfs...
+[2017-09-30 17:27:48,070]-[ERROR]-[13408]-[MainThread]-[10564]-[hdfs_wrapper.py:40] # Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "D:\Computer_Scientist_Tools\Python\lib\socket.py", line 728, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\All_Projects\JobWorkspace\wrappers\src\wrappers\hdfs_wrapper.py", line 38, in write_hdfs
+    writer.write(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 100, in __exit__
+    raise self._err # pylint: disable=raising-bad-type
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 72, in consumer
+    self._consumer(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 464, in consumer
+    data=(c.encode(encoding) for c in _data) if encoding else _data,
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 207, in _request
+    **kwargs
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\adapters.py", line 458, in send
+    low_conn.endheaders()
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 1079, in endheaders
+    self._send_output(message_body)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 911, in _send_output
+    self.send(msg)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 854, in send
+    self.connect()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 166, in connect
+    conn = self._new_conn()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001F1DB2939B0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+[2017-09-30 17:27:48,071]-[ERROR]-[13408]-[MainThread]-[10564]-[hdfs_wrapper.py:42] # reconnect hdfs...
+[2017-09-30 17:28:58,167]-[ERROR]-[14736]-[MainThread]-[9948]-[hdfs_wrapper.py:40] # Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "D:\Computer_Scientist_Tools\Python\lib\socket.py", line 728, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\All_Projects\JobWorkspace\wrappers\src\wrappers\hdfs_wrapper.py", line 38, in write_hdfs
+    writer.write(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 100, in __exit__
+    raise self._err # pylint: disable=raising-bad-type
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 72, in consumer
+    self._consumer(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 464, in consumer
+    data=(c.encode(encoding) for c in _data) if encoding else _data,
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 207, in _request
+    **kwargs
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\adapters.py", line 458, in send
+    low_conn.endheaders()
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 1079, in endheaders
+    self._send_output(message_body)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 911, in _send_output
+    self.send(msg)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 854, in send
+    self.connect()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 166, in connect
+    conn = self._new_conn()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000017A49423978>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+[2017-09-30 17:28:58,169]-[ERROR]-[14736]-[MainThread]-[9948]-[hdfs_wrapper.py:42] # reconnect hdfs...
+[2017-09-30 17:37:04,456]-[ERROR]-[11952]-[MainThread]-[5432]-[hdfs_wrapper.py:40] # Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "D:\Computer_Scientist_Tools\Python\lib\socket.py", line 728, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\All_Projects\JobWorkspace\wrappers\src\wrappers\hdfs_wrapper.py", line 38, in write_hdfs
+    writer.write(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 100, in __exit__
+    raise self._err # pylint: disable=raising-bad-type
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 72, in consumer
+    self._consumer(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 464, in consumer
+    data=(c.encode(encoding) for c in _data) if encoding else _data,
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 207, in _request
+    **kwargs
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\adapters.py", line 458, in send
+    low_conn.endheaders()
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 1079, in endheaders
+    self._send_output(message_body)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 911, in _send_output
+    self.send(msg)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 854, in send
+    self.connect()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 166, in connect
+    conn = self._new_conn()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001ED9E8F2940>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+[2017-09-30 17:37:04,456]-[ERROR]-[11952]-[MainThread]-[5432]-[hdfs_wrapper.py:42] # reconnect hdfs...
+[2017-09-30 17:40:06,962]-[ERROR]-[6712]-[MainThread]-[9684]-[hdfs_wrapper.py:40] # Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\All_Projects\JobWorkspace\wrappers\src\wrappers\hdfs_wrapper.py", line 37, in write_hdfs
+    with self.client.write(path, overwrite=overwrite)as writer:
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 456, in write
+    buffersize=buffersize,
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 112, in api_handler
+    raise err
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 107, in api_handler
+    **self.kwargs
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 210, in _request
+    _on_error(response)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 50, in _on_error
+    raise HdfsError(message, exception=exception)
+hdfs.util.HdfsError: b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>403 Forbidden</title>\n</head><body>\n<h1>Forbidden</h1>\n<p>You don\'t have permission to access /webhdfs/v1/home/yiguo/yiguo_fbad\non this server.</p>\n<hr>\n<address>Apache/2.4.7 (Ubuntu) Server at 192.168.0.222 Port 80</address>\n</body></html>\n'
+
+[2017-09-30 17:40:06,964]-[ERROR]-[6712]-[MainThread]-[9684]-[hdfs_wrapper.py:42] # reconnect hdfs...
+[2017-09-30 17:41:56,027]-[ERROR]-[15576]-[MainThread]-[11184]-[hdfs_wrapper.py:40] # Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "D:\Computer_Scientist_Tools\Python\lib\socket.py", line 728, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\All_Projects\JobWorkspace\wrappers\src\wrappers\hdfs_wrapper.py", line 38, in write_hdfs
+    writer.write(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 100, in __exit__
+    raise self._err # pylint: disable=raising-bad-type
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 72, in consumer
+    self._consumer(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 464, in consumer
+    data=(c.encode(encoding) for c in _data) if encoding else _data,
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 207, in _request
+    **kwargs
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\adapters.py", line 458, in send
+    low_conn.endheaders()
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 1079, in endheaders
+    self._send_output(message_body)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 911, in _send_output
+    self.send(msg)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 854, in send
+    self.connect()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 166, in connect
+    conn = self._new_conn()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000243C3B3DCC0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+[2017-09-30 17:41:56,027]-[ERROR]-[15576]-[MainThread]-[11184]-[hdfs_wrapper.py:42] # reconnect hdfs...
+[2017-10-07 16:49:50,926]-[ERROR]-[14160]-[MainThread]-[12736]-[hdfs_wrapper.py:40] # Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "D:\Computer_Scientist_Tools\Python\lib\socket.py", line 728, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\All_Projects\JobWorkspace\wrappers\src\wrappers\hdfs_wrapper.py", line 38, in write_hdfs
+    writer.write(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 100, in __exit__
+    raise self._err # pylint: disable=raising-bad-type
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\util.py", line 72, in consumer
+    self._consumer(data)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 464, in consumer
+    data=(c.encode(encoding) for c in _data) if encoding else _data,
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 207, in _request
+    **kwargs
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\requests\adapters.py", line 458, in send
+    low_conn.endheaders()
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 1079, in endheaders
+    self._send_output(message_body)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 911, in _send_output
+    self.send(msg)
+  File "D:\Computer_Scientist_Tools\Python\lib\http\client.py", line 854, in send
+    self.connect()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 166, in connect
+    conn = self._new_conn()
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\urllib3\connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001E6AAE5EA90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+[2017-10-07 16:49:50,929]-[ERROR]-[14160]-[MainThread]-[12736]-[hdfs_wrapper.py:42] # reconnect hdfs...

@@ -1,10 +1,28 @@
 # -*- coding:utf-8 -*-
 from orm.tables import Base, Resources
+from wrappers.hdfs_wrapper import HdfsWrapper
 from wrappers.mysql_wrapper import MysqlWrapper
 from common.const import CONST
 
 mysql_wrapper = MysqlWrapper()
 mysql_wrapper.connect_mysql(CONST.DB_NAME)
+
+hdfs_wrapper = HdfsWrapper()
+hdfs_wrapper.connect_hdfs()
+
+
+def upload_files(file_obj, data):
+    file_suff_name = file_obj.filename.split('.')[0]
+    file_ext = '.{}'.format(file_obj.filename.split('.', 1)[1])
+    file_obj.filename = file_suff_name + '{}'.format(int(time.time())) + file_ext
+
+    hdfs_path = CONST.UPLOAD_FOLDER + '/{}/{}/{}'.format(data['uid'], data['asin'], file_obj.filename)
+    file_data = file_obj.read()
+    upload_path = hdfs_wrapper.write_hdfs(hdfs_path, file_data)
+
+    data['addr'] = upload_path
+    insert_resource(data)
+    return CONST.HDFS_URL + upload_path
 
 
 def insert_resource(dict_data):
