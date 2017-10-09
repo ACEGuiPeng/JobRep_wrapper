@@ -1,8 +1,11 @@
 # -*- coding:utf-8 -*-
-from orm.tables import Base, Resources
+import time
+
+from common.const import CONST
+from orm.tables import Resources
+from orm.tables import ResourceRecord
 from wrappers.hdfs_wrapper import HdfsWrapper
 from wrappers.mysql_wrapper import MysqlWrapper
-from common.const import CONST
 
 mysql_wrapper = MysqlWrapper()
 mysql_wrapper.connect_mysql(CONST.DB_NAME)
@@ -11,18 +14,21 @@ hdfs_wrapper = HdfsWrapper()
 hdfs_wrapper.connect_hdfs()
 
 
-def upload_files(file_obj, data):
-    file_suff_name = file_obj.filename.split('.')[0]
-    file_ext = '.{}'.format(file_obj.filename.split('.', 1)[1])
-    file_obj.filename = file_suff_name + '{}'.format(int(time.time())) + file_ext
+def upload_files(file_objs, data):
+    upload_paths = []
+    for file in file_objs:
+        file_suff_name = file.filename.split('.')[0]
+        file_ext = '.{}'.format(file.filename.split('.', 1)[1])
+        file.filename = file_suff_name + '{}'.format(int(time.time())) + file_ext
 
-    hdfs_path = CONST.UPLOAD_FOLDER + '/{}/{}/{}'.format(data['uid'], data['asin'], file_obj.filename)
-    file_data = file_obj.read()
-    upload_path = hdfs_wrapper.write_hdfs(hdfs_path, file_data)
+        hdfs_path = CONST.UPLOAD_FOLDER + '/resources/{}/{}/{}'.format(data['uid'], data['asin'], file.filename)
+        file_data = file.read()
+        upload_path = hdfs_wrapper.write_hdfs(hdfs_path, file_data)
 
-    data['addr'] = upload_path
-    insert_resource(data)
-    return CONST.HDFS_URL + upload_path
+        data['addr'] = upload_path
+        insert_resource(data)
+        upload_paths.append(CONST.HDFS_URL + upload_path)
+    return upload_paths
 
 
 def insert_resource(dict_data):
@@ -34,11 +40,22 @@ def insert_resource(dict_data):
     return 'success'
 
 
-def del_resource(dict_data):
-    with mysql_wrapper.session_scope() as session:
-        target_obj = session.query(Resources).filter_by(id=dict_data['id']).first()
-        session.delete(target_obj)
-    return 'success'
+def delete_resource(dict_data):
+    # 查询resource_record表看是否有记录
+    with mysql_wrapper.session_scope as session:
+        res_record = session.query(ResourceRecord).filter_by(depot_id=dict_data['id']).all()
+    if len(res_record) > 0:
+        # 有记录，返回提示信息
+        return 'failed to delete,this resource has been used in other ad_case'
+    else:
+        # 无记录，先查记录,再通过hdfs删除，再删除记录
+        with mysql_wrapper.session_scope() as session:
+            target_obj = session.query(Resources).filter_by(id=dict_data['id']).first()
+            if hdfs_wrapper.delete_hdfs(target_obj.addr):
+                session.delete(target_obj)
+                return 'delete success'
+            else:
+                return 'delete failed'
 
 
 def update_resource(dict_data):

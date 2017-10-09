@@ -81,7 +81,7 @@ class _CONST(object):
     HDFS_URL = 'http://192.168.0.222:50070'
     HDFS_USER = 'yiguo'
     UPLOAD_FOLDER = '/home/yiguo/yiguo_fbad/uploads'
-    ALLOW_EXTENSIONS = ['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif']
+    ALLOW_EXTENSIONS = ['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'ppt', 'pptx', 'html']
 
 
 CONST = _CONST()

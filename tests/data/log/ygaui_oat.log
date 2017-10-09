@@ -1053,3 +1053,72 @@ Traceback (most recent call last):
 urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001E6AAE5EA90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
 
 [2017-10-07 16:49:50,929]-[ERROR]-[14160]-[MainThread]-[12736]-[hdfs_wrapper.py:42] # reconnect hdfs...
+[2017-10-09 19:51:51,125]-[ERROR]-[14824]-[MainThread]-[16448]-[hdfs_wrapper.py:31] # Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\All_Projects\JobWorkspace\wrappers\src\wrappers\hdfs_wrapper.py", line 28, in read_hdfs
+    with self.client.read(hdfs_path)as reader:
+  File "D:\Computer_Scientist_Tools\Python\lib\contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 678, in read
+    buffersize=buffer_size,
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 112, in api_handler
+    raise err
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 107, in api_handler
+    **self.kwargs
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 210, in _request
+    _on_error(response)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 50, in _on_error
+    raise HdfsError(message, exception=exception)
+hdfs.util.HdfsError: Path is not a file: /
+	at org.apache.hadoop.hdfs.server.namenode.INodeFile.valueOf(INodeFile.java:75)
+	at org.apache.hadoop.hdfs.server.namenode.INodeFile.valueOf(INodeFile.java:61)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1828)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1799)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1712)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:588)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:365)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:616)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:982)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2049)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2045)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2043)
+
+
+[2017-10-09 19:59:36,215]-[ERROR]-[4984]-[MainThread]-[18360]-[hdfs_wrapper.py:30] # Traceback (most recent call last):
+  File "D:\Computer_Scientist_Tools\All_Projects\JobWorkspace\wrappers\src\wrappers\hdfs_wrapper.py", line 27, in read_hdfs
+    with self.client.read(hdfs_path)as reader:
+  File "D:\Computer_Scientist_Tools\Python\lib\contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 678, in read
+    buffersize=buffer_size,
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 112, in api_handler
+    raise err
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 107, in api_handler
+    **self.kwargs
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 210, in _request
+    _on_error(response)
+  File "D:\Computer_Scientist_Tools\Python\lib\site-packages\hdfs\client.py", line 50, in _on_error
+    raise HdfsError(message, exception=exception)
+hdfs.util.HdfsError: Path is not a file: /home/yiguo/yiguo_fbad/uploads/000001/23429
+	at org.apache.hadoop.hdfs.server.namenode.INodeFile.valueOf(INodeFile.java:75)
+	at org.apache.hadoop.hdfs.server.namenode.INodeFile.valueOf(INodeFile.java:61)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocationsInt(FSNamesystem.java:1828)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1799)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations(FSNamesystem.java:1712)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.getBlockLocations(NameNodeRpcServer.java:588)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.getBlockLocations(ClientNamenodeProtocolServerSideTranslatorPB.java:365)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:616)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:982)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2049)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2045)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2043)
+
+
+[2017-10-09 19:59:36,216]-[ERROR]-[4984]-[MainThread]-[18360]-[hdfs_wrapper.py:32] # reconnect hdfs...

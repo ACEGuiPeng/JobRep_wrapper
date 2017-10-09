@@ -24,9 +24,8 @@ class HdfsWrapper:
 
     def read_hdfs(self, hdfs_path):
         try:
-            if exists(hdfs_path):
-                with self.client.read(hdfs_path)as reader:
-                    return reader.read()
+            with self.client.read(hdfs_path)as reader:
+                return reader.read()
         except:
             log.error(traceback.format_exc())
             self.connect_hdfs()
@@ -41,3 +40,6 @@ class HdfsWrapper:
             log.error(traceback.format_exc())
             self.connect_hdfs()
             log.error('reconnect hdfs...')
+
+    def delete_hdfs(self, hdfs_path, recursive=False):
+        return self.client.delete(hdfs_path, recursive)

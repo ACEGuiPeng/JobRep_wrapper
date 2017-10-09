@@ -22,18 +22,20 @@ class Resources(Resource):
 
     def post(self):
         # 上传resource
-        up_file = request.files['file']
+        up_files = request.files['file']
         form_data = request.form
-        if up_file and self.allowed_file(up_file.filename):
-            upload_path = upload_files(up_file, form_data)
-            return json.dumps({'file_path': upload_path})
+        up_files = [x for x in up_files if x and self.allowed_file(x.filename)]
+        upload_paths = upload_files(up_files, form_data)
+        return json.dumps({'file_path': upload_paths})
 
     def put(self):
+        # 修改resource
         json_data = request.get_json(force=True)
         message = update_resource(json_data)
         return json.dumps({'message': message})
 
     def delete(self):
+        # 删除resource
         json_data = request.get_json(force=True)
-        message = del_resource(json_data)
+        message = delete_resource(json_data)
         return json.dumps({'message': message})
