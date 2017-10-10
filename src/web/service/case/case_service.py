@@ -14,8 +14,8 @@ def insert_case(dict_data):
 
 def del_case(dict_data):
     with Globals.get_mysql_wrapper.session_scope() as session:
-        target_obj = session.query(AdCase).filter_by(id=dict_data['id']).first()
-        session.delete(target_obj)
+        session.query(AdCase).filter_by(uid=dict_data['uid']).filter(AdCase.id.in_(dict_data['id'])).delete(
+            synchronize_session=False)
     return 'success'
 
 
@@ -25,22 +25,29 @@ def update_case(dict_data):
     return 'success'
 
 
-def select_case(case_ids=None):
+def select_case(dict_data, page_no=1, page_size=10, sorted_way=-1):
     column_list = [
         'id',
         'uid',
         'type',
+        'update_time',
         'ad_records',
         'target_id',
         'status',
         'bidding'
     ]
     with Globals.get_mysql_wrapper.session_scope() as session:
-        if case_ids is None:
-            obj_list = session.query(AdCase).all()
+        if sorted_way == -1:
+            exce_query = session.query(AdCase).order_by(AdCase.update_time.desc())
         else:
-            obj_list = session.query(AdCase).filter(AdCase.id.in_(tuple(case_ids))).all()
-    result_dict = [{key: obj.__dict__[key] for key in obj.__dict__ if key in column_list} for obj in obj_list]
+            exce_query = session.query(AdCase).order_by(AdCase.update_time.asc())
+
+        obj_list = exce_query.filter_by(status=dict_data['status'], asin=dict_data['asin']).offset(page_no - 1).limit(
+            page_size)
+
+        all_count = len(obj_list)
+    result_dict = {'all_count': all_count, 'cases':
+        [{key: obj.__dict__[key] for key in obj.__dict__ if key in column_list} for obj in obj_list]}
     return result_dict
 
 

@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 from common.const import CONST
 from loggers.logger import log
+from orm.tables import Base
 from web.service.globals import Globals
 from wrappers.hbase_wrapper import HbaseWrapper
 from wrappers.hdfs_wrapper import HdfsWrapper
@@ -25,6 +26,7 @@ class _BaseInitializer:
     def _init_mysql(cls):
         mysql_wrapper = MysqlWrapper()
         mysql_wrapper.connect_mysql(CONST.DB_NAME)
+        mysql_wrapper.create_tables(Base)
         Globals.set_hbase_wrapper(mysql_wrapper)
 
     @classmethod

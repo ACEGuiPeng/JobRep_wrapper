@@ -8,8 +8,12 @@ from web.service.case.case_service import *
 
 
 class Case(Resource):
-    def get(self, case_ids=None):
-        result = select_case(case_ids)
+    def get(self):
+        dict_data = request.args
+        sorted_way = dict_data['sorted_way']
+        page_no = dict_data['page_no']
+        page_size = dict_data['page_size']
+        result = select_case(dict_data, page_no, page_size, sorted_way)
         return json.dumps(result)
 
     def post(self):

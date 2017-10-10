@@ -14,6 +14,7 @@ class Material(Resource):
         uid = data_dict['uid']
         sorted_way = data_dict['sorted_way']
         key_words = data_dict['key_words']
+        update_time = data_dict['update_time']
         result = select_material(asin, uid, sorted_way, key_words)
         return json.dumps(result)
 

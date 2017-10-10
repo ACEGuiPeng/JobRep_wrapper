@@ -21,7 +21,7 @@ api = Api(app)
 
 api.add_resource(Case, '/ygfbad/web/cases')
 api.add_resource(CaseManage, '/ygfbad/web/case_manage')
-api.add_resource(Material, '/ygfbad/web/materials')
+api.add_resource(Material, '/ygfbad/web/maters')
 api.add_resource(MaterialRecord, '/ygfbad/web/mater_records')
 api.add_resource(LandingPage, '/ygfbad/web/land_pages')
 api.add_resource(LandingPageTemplate, '/ygfbad/web/lp_temps')

@@ -16,7 +16,7 @@ class LandingPage(Resource):
         # 已有落地页
         data_dict = request.args
         sorted_way = data_dict['sorted_way']
-        result = select_landing_page(sorted_way)
+        result = select_landing_page(data_dict,sorted_way)
         return json.dumps(result)
 
     def post(self):

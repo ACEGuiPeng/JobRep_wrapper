@@ -25,21 +25,17 @@ def update_material(dict_data):
     return 'success'
 
 
-def select_material(asin=None, uid=None, sorted_way=-1, key_words=None):
-    '''
-    :param uid:
-    :param sorted_way: 默认值-1表示倒序排列，1表示正序排列
-    :return:
-    '''
+def select_material(asin, uid, sorted_way=-1, key_word=None):
     column_list = [
         'asin',
         'uid',
         'update_time',
-        'name',
+        'product_name',
         'price',
-        'title',
-        'ad_text',
+        'name',
+        'description',
         'links',
+        'land_page_ids',
         'keywords'
     ]
     with Globals.get_mysql_wrapper.session_scope() as session:
@@ -49,6 +45,6 @@ def select_material(asin=None, uid=None, sorted_way=-1, key_words=None):
             exc_query = session.query(Material).order_by(Material.update_time.asc())
 
         obj_list = exc_query.filter_by(asin=asin, uid=uid).filter(
-            Material.keywords.like("%{}%".format(key_words))).all()
+            Material.keywords.like("%{}%".format(key_word))).all()
         result_dict = [{key: obj.__dict__[key] for key in obj.__dict__ if key in column_list} for obj in obj_list]
     return result_dict
