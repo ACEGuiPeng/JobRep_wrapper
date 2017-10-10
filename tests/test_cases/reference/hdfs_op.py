@@ -1,11 +1,12 @@
-import hdfs
 import traceback
+
+import hdfs
 
 from common.utils import error_exception_decorate
 from loggers.logger import log
 
 
-class HdfsOperation:
+class HdfsOperation(object):
     _client = None
     _parm_handler = None
     _dns_name_handler = None

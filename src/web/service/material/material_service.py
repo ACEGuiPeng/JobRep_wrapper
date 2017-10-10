@@ -1,14 +1,10 @@
 # -*- coding:utf-8 -*-
-from orm.tables import Base, Material
-from wrappers.mysql_wrapper import MysqlWrapper
-from common.const import CONST
-
-mysql_wrapper = MysqlWrapper()
-mysql_wrapper.connect_mysql(CONST.DB_NAME)
+from orm.tables import Material
+from web.service.globals import Globals
 
 
 def insert_material(dict_data):
-    with mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper.session_scope() as session:
         ad_material = Material()
         ad_material.__dict__.update(dict_data)
         session.add(ad_material)
@@ -17,14 +13,14 @@ def insert_material(dict_data):
 
 
 def del_material(dict_data):
-    with mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper.session_scope() as session:
         target_obj = session.query(Material).filter_by(asin=dict_data['asin']).first()
         session.delete(target_obj)
     return 'success'
 
 
 def update_material(dict_data):
-    with mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper.session_scope() as session:
         session.query(Material).filter_by(asin=dict_data['asin']).update(dict_data)
     return 'success'
 
@@ -46,7 +42,7 @@ def select_material(asin=None, uid=None, sorted_way=-1, key_words=None):
         'links',
         'keywords'
     ]
-    with mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper.session_scope() as session:
         if sorted_way == -1:
             exc_query = session.query(Material).order_by(Material.update_time.desc())
         else:

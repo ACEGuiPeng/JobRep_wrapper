@@ -1,6 +1,4 @@
 # -*- coding:utf-8 -*-
-import time
-from threading import Thread
 
 from flask import Flask
 from flask_restful import Api
@@ -21,16 +19,16 @@ from web.manage.resource.resource_record_manage import ResourcesRecord
 app = Flask(__name__)
 api = Api(app)
 
-api.add_resource(Case, '/ygfbad/web/case')
+api.add_resource(Case, '/ygfbad/web/cases')
 api.add_resource(CaseManage, '/ygfbad/web/case_manage')
-api.add_resource(Material, '/ygfbad/web/material')
-api.add_resource(MaterialRecord, '/ygfbad/web/mater_record')
-api.add_resource(LandingPage, '/ygfbad/web/land_page')
-api.add_resource(LandingPageTemplate, '/ygfbad/web/lp_temp')
-api.add_resource(LandingPageRecord, '/ygfbad/web/lp_record')
+api.add_resource(Material, '/ygfbad/web/materials')
+api.add_resource(MaterialRecord, '/ygfbad/web/mater_records')
+api.add_resource(LandingPage, '/ygfbad/web/land_pages')
+api.add_resource(LandingPageTemplate, '/ygfbad/web/lp_temps')
+api.add_resource(LandingPageRecord, '/ygfbad/web/lp_records')
 api.add_resource(LandingPageTempList, '/ygfbad/web/temp_list')
 api.add_resource(Resources, '/ygfbad/web/res')
-api.add_resource(ResourcesRecord, '/ygfbad/web/res_record')
+api.add_resource(ResourcesRecord, '/ygfbad/web/res_records')
 
 
 @app.route('/')
@@ -50,8 +48,3 @@ def run_web_service():
 
 def stop_web_service():
     loop.stop()
-
-
-if __name__ == '__main__':
-    Thread(target=run_web_service).start()
-    time.sleep(5)

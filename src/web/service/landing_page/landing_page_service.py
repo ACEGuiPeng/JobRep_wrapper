@@ -1,14 +1,10 @@
 # -*- coding:utf-8 -*-
-from common.const import CONST
-from orm.tables import Base, LandingPage
-from wrappers.mysql_wrapper import MysqlWrapper
-
-mysql_wrapper = MysqlWrapper()
-mysql_wrapper.connect_mysql(CONST.DB_NAME)
+from orm.tables import LandingPage
+from web.service.globals import Globals
 
 
 def insert_landing_page(dict_data):
-    with mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper.session_scope() as session:
         landing_page = LandingPage()
         landing_page.__dict__.update(dict_data)
         session.add(landing_page)
@@ -17,14 +13,14 @@ def insert_landing_page(dict_data):
 
 
 def del_landing_page(dict_data):
-    with mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper.session_scope() as session:
         target_obj = session.query(LandingPage).filter_by(id=dict_data['id']).first()
         session.delete(target_obj)
     return 'success'
 
 
 def update_landing_page(dict_data):
-    with mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper.session_scope() as session:
         session.query(LandingPage).filter_by(id=dict_data['id']).update(dict_data)
     return 'success'
 
@@ -37,7 +33,7 @@ def select_landing_page(sorted_way=-1):
         'template_id',
         'attributes',
     ]
-    with mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper.session_scope() as session:
         exec_query = session.query(LandingPage)
         if sorted_way == -1:
             obj_list = exec_query.order_by(LandingPage.update_time.desc()).all()

@@ -2,16 +2,9 @@
 import time
 
 from common.const import CONST
-from orm.tables import Resources
 from orm.tables import ResourceRecord
-from wrappers.hdfs_wrapper import HdfsWrapper
-from wrappers.mysql_wrapper import MysqlWrapper
-
-mysql_wrapper = MysqlWrapper()
-mysql_wrapper.connect_mysql(CONST.DB_NAME)
-
-hdfs_wrapper = HdfsWrapper()
-hdfs_wrapper.connect_hdfs()
+from orm.tables import Resources
+from web.service.globals import Globals
 
 
 def upload_files(file_objs, data):
@@ -23,7 +16,7 @@ def upload_files(file_objs, data):
 
         hdfs_path = CONST.UPLOAD_FOLDER + '/resources/{}/{}/{}'.format(data['uid'], data['asin'], file.filename)
         file_data = file.read()
-        upload_path = hdfs_wrapper.write_hdfs(hdfs_path, file_data)
+        upload_path = Globals.get_hdfs_wrapper.write_hdfs(hdfs_path, file_data)
 
         data['addr'] = upload_path
         insert_resource(data)
@@ -32,7 +25,7 @@ def upload_files(file_objs, data):
 
 
 def insert_resource(dict_data):
-    with mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper.session_scope() as session:
         resource = Resources()
         resource.__dict__.update(dict_data)
         session.add(resource)
@@ -42,16 +35,16 @@ def insert_resource(dict_data):
 
 def delete_resource(dict_data):
     # 查询resource_record表看是否有记录
-    with mysql_wrapper.session_scope as session:
+    with Globals.get_mysql_wrapper.session_scope as session:
         res_record = session.query(ResourceRecord).filter_by(depot_id=dict_data['id']).all()
     if len(res_record) > 0:
         # 有记录，返回提示信息
         return 'failed to delete,this resource has been used in other ad_case'
     else:
         # 无记录，先查记录,再通过hdfs删除，再删除记录
-        with mysql_wrapper.session_scope() as session:
+        with Globals.get_mysql_wrapper.session_scope() as session:
             target_obj = session.query(Resources).filter_by(id=dict_data['id']).first()
-            if hdfs_wrapper.delete_hdfs(target_obj.addr):
+            if Globals.get_hdfs_wrapper.delete_hdfs(target_obj.addr):
                 session.delete(target_obj)
                 return 'delete success'
             else:
@@ -59,7 +52,7 @@ def delete_resource(dict_data):
 
 
 def update_resource(dict_data):
-    with mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper.session_scope() as session:
         session.query(Resources).filter_by(id=dict_data['id']).update(dict_data)
     return 'success'
 
@@ -74,7 +67,7 @@ def select_resource(uid=None, asin=None, sorted_way=-1, key_words=None):
         'keywords',
         'addr'
     ]
-    with mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper.session_scope() as session:
         if sorted_way == -1:
             exce_query = session.query(Resources).order_by(Resources.update_time.desc())
         else:
