@@ -4,6 +4,7 @@ import json
 from flask import request, Response
 from flask_restful import Resource
 
+from common.const import CONST
 from web.service.landing_page.landing_page_service import *
 from wrappers.hdfs_wrapper import HdfsWrapper
 

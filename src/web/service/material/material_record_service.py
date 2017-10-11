@@ -28,11 +28,11 @@ def update_material_record(dict_data):
 def select_material_record():
     column_list = [
         'id',
+        'case_id',
         'asin',
-        'record_time',
         'resource',
-        'title',
-        'ad_text',
+        'name',
+        'description',
         'type',
         'link'
     ]

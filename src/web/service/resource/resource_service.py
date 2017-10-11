@@ -64,6 +64,7 @@ def select_resource(uid=None, asin=None, sorted_way=-1, key_words=None):
         'asin',
         'update_time',
         'type',
+        'fb_hash',
         'keywords',
         'addr'
     ]

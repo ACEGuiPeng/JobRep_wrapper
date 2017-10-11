@@ -7,9 +7,9 @@ from loggers.logger import log
 def init():
     try:
         BS_INITIALIZER.initialize()
-    except Exception as err:
-        log.fatal(str(err))
-        raise err
+    except Exception as e:
+        log.error('{}'.format(str(e)))
+        raise e
 
 
 def de_init():

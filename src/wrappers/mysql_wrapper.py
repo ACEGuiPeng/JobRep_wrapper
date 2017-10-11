@@ -42,8 +42,9 @@ class MysqlWrapper(object):
     def connect_mysql(self, db_name):
         try:
             self.engine = create_engine(
-                'mysql+mysqlconnector://{username}:{pwd}@{db_url}/{db_name}'.format(
-                    username=CONST.MYSQL_USERNAME, pwd=CONST.MYSQL_PWD, db_url=CONST.DB_URL, db_name=db_name))
+                'mysql+mysqlconnector://{username}:{pwd}@{db_url}/{db_name}?charset=utf8'.format(
+                    username=CONST.MYSQL_USERNAME, pwd=CONST.MYSQL_PWD, db_url=CONST.DB_URL, db_name=db_name),
+                max_overflow=5, encoding='utf-8')
 
             DB_Session = sessionmaker(bind=self.engine)
 

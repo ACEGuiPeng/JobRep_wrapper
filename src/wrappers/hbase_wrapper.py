@@ -52,12 +52,12 @@ class HbaseWrapper(object):
             log.error('reconnect times have been max,please check the error')
             raise Exception(str(e))
 
-    def create_table(self, table_name, data_dict):
+    def create_table(self, table_name, families):
         try:
             with self.connection_pool.connection(self.timeout) as connection:
                 connection.create_table(
                     table_name,
-                    data_dict
+                    families
                 )
             log.info('target table: {} create successfully.'.format(table_name))
         except Exception as e:
@@ -74,3 +74,13 @@ class HbaseWrapper(object):
             log.error('target table: {} get fail.'.format(table_name, str(e)))
             raise Exception(str(e))
         return target_table
+
+    def del_table(self, table_name):
+        try:
+            with self.connection_pool.connection(self.timeout) as connection:
+
+                connection.delete_table(table_name)
+            log.debug('delete table: {} successfully.'.format(table_name))
+        except Exception as e:
+            log.error('delete table: {} get fail.'.format(table_name, str(e)))
+            raise Exception(str(e))

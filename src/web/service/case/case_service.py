@@ -1,4 +1,6 @@
 # -*- coding:utf-8 -*-
+from sqlalchemy import func
+
 from orm.tables import AdCase
 from web.service.globals import Globals
 
@@ -8,8 +10,9 @@ def insert_case(dict_data):
         ad_case = AdCase()
         ad_case.__dict__.update(dict_data)
         session.add(ad_case)
+        new_id = session.query(func.max(AdCase.id)).one()[0]
 
-    return 'success'
+    return new_id
 
 
 def del_case(dict_data):

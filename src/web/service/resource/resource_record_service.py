@@ -28,10 +28,9 @@ def update_resource_record(dict_data):
 def select_resource_record():
     column_list = [
         'id',
-        'depot_id',
-        'uid',
-        'asin',
         'case_id',
+        'resource_id',
+        'uid',
     ]
     with Globals.get_mysql_wrapper.session_scope() as session:
         obj_list = session.query(ResourceRecord).all()

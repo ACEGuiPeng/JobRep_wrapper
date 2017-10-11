@@ -28,10 +28,11 @@ def update_landing_page_record(dict_data):
 def select_landing_page_record(sorted_way=-1):
     column_list = [
         'id',
-        'depot_id',
-        'uid',
-        'asin',
         'case_id',
+        'landing_page_id',
+        'uid',
+        'template_id',
+        'attributes'
     ]
     with Globals.get_mysql_wrapper.session_scope() as session:
         exec_query = session.query(LandingPageRecord)

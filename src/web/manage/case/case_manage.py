@@ -18,8 +18,9 @@ class Case(Resource):
 
     def post(self):
         json_data = request.get_json(force=True)
-        message = insert_case(json_data)
-        return json.dumps({'message': message})
+        new_id = insert_case(json_data)
+        if new_id:
+            return json.dumps({'message': 'success'})
 
     def put(self):
         json_data = request.get_json(force=True)

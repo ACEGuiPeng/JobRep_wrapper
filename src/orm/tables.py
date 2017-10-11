@@ -8,7 +8,7 @@ Base = declarative_base()
 class Material(Base):
     __tablename__ = 'material'
 
-    asin = Column(String(32), primary_key=True)
+    asin = Column(Integer(), primary_key=True)
     uid = Column(String(32))
     update_time = Column(String(32))
     product_name = Column(String(1024))
@@ -23,7 +23,7 @@ class Material(Base):
 class MaterialRecord(Base):
     __tablename__ = 'material_record'
 
-    id = Column(String(32), primary_key=True, autoincrement=True)
+    id = Column(Integer(), primary_key=True, autoincrement=True)
     case_id = Column(String(32))
     asin = Column(String(32))
     resource = Column(String(32))
@@ -36,7 +36,7 @@ class MaterialRecord(Base):
 class Resources(Base):
     __tablename__ = 'resource'
 
-    id = Column(String(32), primary_key=True, autoincrement=True)
+    id = Column(Integer(), primary_key=True, autoincrement=True)
     uid = Column(String(32))
     asin = Column(String(32))
     update_time = Column(String(32))
@@ -49,16 +49,16 @@ class Resources(Base):
 class ResourceRecord(Base):
     __tablename__ = 'resource_record'
 
-    id = Column(String(32), primary_key=True, autoincrement=True)
+    id = Column(Integer(), primary_key=True, autoincrement=True)
     case_id = Column(String(32))
-    depot_id = Column(String(32))
+    resource_id = Column(String(32))
     uid = Column(String(32))
 
 
 class LandingPage(Base):
     __tablename__ = 'landing_page'
 
-    id = Column(String(32), primary_key=True, autoincrement=True)
+    id = Column(Integer(), primary_key=True, autoincrement=True)
     uid = Column(String(32))
     update_time = Column(String(32))
     template_id = Column(String(32))
@@ -68,11 +68,10 @@ class LandingPage(Base):
 class LandingPageRecord(Base):
     __tablename__ = 'landing_page_record'
 
-    id = Column(String(32), primary_key=True, autoincrement=True)
+    id = Column(Integer(), primary_key=True, autoincrement=True)
     case_id = Column(String(32))
-    depot_id = Column(String(32))
+    landing_page_id = Column(String(32))
     uid = Column(String(32))
-    update_time = Column(String(32))
     template_id = Column(String(32))
     attributes = Column(String(2048))
 
@@ -80,7 +79,7 @@ class LandingPageRecord(Base):
 class AdCase(Base):
     __tablename__ = 'case'
 
-    id = Column(String(32), primary_key=True, autoincrement=True)
+    id = Column(Integer(), primary_key=True, autoincrement=True)
     uid = Column(String(32))
     type = Column(String(32))
     update_time = Column(String(32))

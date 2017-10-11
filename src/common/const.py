@@ -70,8 +70,8 @@ class _CONST(object):
 
     # mysql
     MYSQL_USERNAME = 'root'
-    MYSQL_PWD = '123456'
-    DB_URL = '192.168.0.16'
+    MYSQL_PWD = 'root'
+    DB_URL = '192.168.0.26'
     DB_NAME = 'test_db'
 
     # tornado
@@ -86,6 +86,10 @@ class _CONST(object):
 
     # Redis
     REDIS_HOST = 'http://192.168.0.26'
-    REDIS_PORT = '6379'
+    REDIS_PORT = 6379
+
+    # Hbase
+    HBASE_HOST = '192.168.0.26'
+    HBASE_PORT = 9090
 
 CONST = _CONST()

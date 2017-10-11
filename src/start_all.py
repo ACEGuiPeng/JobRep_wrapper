@@ -14,8 +14,8 @@ if __name__ == '__main__':
 
     try:
         start_all()
-    except Exception as error:
-        log.fatal(str(error))
+    except Exception as e:
+        log.error('{}'.format(str(e)))
         de_init()
         stop_web_service()
         exit(0)
