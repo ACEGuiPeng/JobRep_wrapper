@@ -37,7 +37,7 @@ class MysqlWrapper(object):
             log.info('creating sql tables.')
             base.metadata.create_all(self.engine)
         except Exception as e:
-            log.error('create tables failed , {}'.format('', str(e)))
+            log.error('create tables failed {}'.format(str(e)))
 
     def connect_mysql(self, db_name):
         try:

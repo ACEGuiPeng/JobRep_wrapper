@@ -84,4 +84,8 @@ class _CONST(object):
     ALLOW_EXTENSIONS = ['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'ppt', 'pptx', 'html']
 
 
+    # Redis
+    REDIS_HOST = 'http://192.168.0.26'
+    REDIS_PORT = '6379'
+
 CONST = _CONST()

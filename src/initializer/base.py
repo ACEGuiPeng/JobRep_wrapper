@@ -16,9 +16,7 @@ class _BaseInitializer:
     @classmethod
     def _init_redis(cls):
         redis_wrapper = RedisWrapper(host=CONST.REDIS_HOST,
-                                     port=CONST.REDIS_PORT,
-                                     password=CONST.REDIS_PASSWORD,
-                                     max_connections=CONST.MAX_REDIS_CONNECTION)
+                                     port=CONST.REDIS_PORT)
 
         Globals.set_redis_wrapper(redis_wrapper)
 
