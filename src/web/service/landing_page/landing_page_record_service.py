@@ -1,26 +1,33 @@
 # -*- coding:utf-8 -*-
+from sqlalchemy import func
+
 from orm.tables import LandingPageRecord
 from web.service.globals import Globals
 
 
-def insert_landing_page_record(dict_data):
-    with Globals.get_mysql_wrapper.session_scope() as session:
-        landing_page_record = LandingPageRecord()
-        landing_page_record.__dict__.update(dict_data)
-        session.add(landing_page_record)
+def insert_landing_page_record(dict_datas):
+    ids = []
 
-    return 'success'
+    for data in dict_datas:
+        with Globals.get_mysql_wrapper().session_scope() as session:
+            landing_page_record = LandingPageRecord()
+            landing_page_record.__dict__.update(data)
+            session.add(landing_page_record)
+            lp_record_id = session.query(func.max(LandingPageRecord.id)).one()[0]
+        ids.append(lp_record_id)
+
+    return ids
 
 
 def del_landing_page_record(dict_data):
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         target_obj = session.query(LandingPageRecord).filter_by(id=dict_data['id']).first()
         session.delete(target_obj)
     return 'success'
 
 
 def update_landing_page_record(dict_data):
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         session.query(LandingPageRecord).filter_by(id=dict_data['id']).update(dict_data)
     return 'success'
 
@@ -34,7 +41,7 @@ def select_landing_page_record(sorted_way=-1):
         'template_id',
         'attributes'
     ]
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         exec_query = session.query(LandingPageRecord)
         if sorted_way == -1:
             obj_list = exec_query.order_by(LandingPageRecord.update_time.desc()).all()

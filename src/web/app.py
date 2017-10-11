@@ -10,11 +10,8 @@ from common.const import CONST
 from web.manage.admin.verification_manage import CaseManage
 from web.manage.case.case_manage import Case
 from web.manage.landing_page.landing_page_manage import LandingPage, LandingPageTemplate, LandingPageTempList
-from web.manage.landing_page.landing_page_record import LandingPageRecord
 from web.manage.material.material_manage import Material
-from web.manage.material.material_record_manage import MaterialRecord
 from web.manage.resource.resource_manage import Resources
-from web.manage.resource.resource_record_manage import ResourcesRecord
 
 app = Flask(__name__)
 api = Api(app)

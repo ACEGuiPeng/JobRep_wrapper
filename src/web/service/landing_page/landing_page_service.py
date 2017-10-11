@@ -1,26 +1,31 @@
 # -*- coding:utf-8 -*-
+from sqlalchemy import func
+
 from orm.tables import LandingPage
 from web.service.globals import Globals
 
 
-def insert_landing_page(dict_data):
-    with Globals.get_mysql_wrapper.session_scope() as session:
-        landing_page = LandingPage()
-        landing_page.__dict__.update(dict_data)
-        session.add(landing_page)
-
-    return 'success'
+def insert_landing_page(dict_datas):
+    ids = []
+    for data in dict_datas:
+        with Globals.get_mysql_wrapper().session_scope() as session:
+            landing_page = LandingPage()
+            landing_page.__dict__.update(data)
+            session.add(landing_page)
+            lp_id = session.query(func.max(LandingPage.id)).one()[0]
+        ids.append(lp_id)
+    return ids
 
 
 def del_landing_page(dict_data):
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         target_obj = session.query(LandingPage).filter_by(id=dict_data['id']).first()
         session.delete(target_obj)
     return 'success'
 
 
 def update_landing_page(dict_data):
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         session.query(LandingPage).filter_by(id=dict_data['id']).update(dict_data)
     return 'success'
 
@@ -33,7 +38,7 @@ def select_landing_page(data_dict, sorted_way=-1):
         'template_id',
         'attributes',
     ]
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         if sorted_way == -1:
             exec_query = session.query(LandingPage).order_by(LandingPage.update_time.desc())
         else:

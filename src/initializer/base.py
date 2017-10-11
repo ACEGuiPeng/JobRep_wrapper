@@ -25,7 +25,7 @@ class _BaseInitializer:
         mysql_wrapper = MysqlWrapper()
         mysql_wrapper.connect_mysql(CONST.DB_NAME)
         mysql_wrapper.create_tables(Base)
-        Globals.set_hbase_wrapper(mysql_wrapper)
+        Globals.set_mysql_wrapper(mysql_wrapper)
 
     @classmethod
     def _init_hbase(cls):

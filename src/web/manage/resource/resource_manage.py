@@ -16,12 +16,11 @@ class Resources(Resource):
         uid = data_dict['uid']
         asin = data_dict['asin']
         sorted_way = data_dict['sorted_way']
-        key_words = data_dict['key_words']
-        result = select_resource(uid, asin, sorted_way, key_words)
+        key_word = data_dict['key_word']
+        result = select_resource(uid, asin, sorted_way, key_word)
         return json.dumps(result)
 
     def post(self):
-        # 上传resource
         up_files = request.files['file']
         form_data = request.form
         up_files = [x for x in up_files if x and self.allowed_file(x.filename)]
@@ -29,13 +28,11 @@ class Resources(Resource):
         return json.dumps({'file_path': upload_paths})
 
     def put(self):
-        # 修改resource
         json_data = request.get_json(force=True)
         message = update_resource(json_data)
         return json.dumps({'message': message})
 
     def delete(self):
-        # 删除resource
         json_data = request.get_json(force=True)
         message = delete_resource(json_data)
         return json.dumps({'message': message})

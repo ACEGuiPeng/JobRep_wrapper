@@ -25,7 +25,7 @@ def upload_files(file_objs, data):
 
 
 def insert_resource(dict_data):
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         resource = Resources()
         resource.__dict__.update(dict_data)
         session.add(resource)
@@ -35,29 +35,29 @@ def insert_resource(dict_data):
 
 def delete_resource(dict_data):
     # 查询resource_record表看是否有记录
-    with Globals.get_mysql_wrapper.session_scope as session:
+    with Globals.get_mysql_wrapper().session_scope as session:
         res_record = session.query(ResourceRecord).filter_by(depot_id=dict_data['id']).all()
     if len(res_record) > 0:
         # 有记录，返回提示信息
         return 'failed to delete,this resource has been used in other ad_case'
     else:
         # 无记录，先查记录,再通过hdfs删除，再删除记录
-        with Globals.get_mysql_wrapper.session_scope() as session:
+        with Globals.get_mysql_wrapper().session_scope() as session:
             target_obj = session.query(Resources).filter_by(id=dict_data['id']).first()
             if Globals.get_hdfs_wrapper.delete_hdfs(target_obj.addr):
                 session.delete(target_obj)
-                return 'delete success'
+                return 'success'
             else:
-                return 'delete failed'
+                return 'failed'
 
 
 def update_resource(dict_data):
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         session.query(Resources).filter_by(id=dict_data['id']).update(dict_data)
     return 'success'
 
 
-def select_resource(uid=None, asin=None, sorted_way=-1, key_words=None):
+def select_resource(uid=None, asin=None, sorted_way=-1, key_word=None):
     column_list = [
         'id',
         'uid',
@@ -68,14 +68,14 @@ def select_resource(uid=None, asin=None, sorted_way=-1, key_words=None):
         'keywords',
         'addr'
     ]
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         if sorted_way == -1:
             exce_query = session.query(Resources).order_by(Resources.update_time.desc())
         else:
             exce_query = session.query(Resources).order_by(Resources.update_time.asc())
 
         obj_list = exce_query.filter_by(uid=uid, asin=asin).filter(
-            Resources.keywords.like("%{}%".format(key_words))).all()
+            Resources.keywords.like("%{}%".format(key_word))).all()
 
         result_dict = [{key: obj.__dict__[key] for key in obj.__dict__ if key in column_list} for obj in obj_list]
     return result_dict

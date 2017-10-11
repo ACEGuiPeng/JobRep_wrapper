@@ -45,22 +45,22 @@ def send_json_data():
     })
 
     # material
-    resp = requests.post('http://127.0.0.1:5000/ygfbad/web/materials', json={
+    resp = requests.post('http://127.0.0.1:5000/ygfbad/web/maters', json={
         "sid": "{}".format(random_num),
         "timestamp": "{}".format(random_num),
         "content": "test_content"
     })
-    resp = requests.get('http://127.0.0.1:5000/ygfbad/web/materials', json={
+    resp = requests.get('http://127.0.0.1:5000/ygfbad/web/maters', json={
         "sid": "{}".format(random_num),
         "timestamp": "{}".format(random_num),
         "content": "test_content"
     })
-    resp = requests.put('http://127.0.0.1:5000/ygfbad/web/materials', json={
+    resp = requests.put('http://127.0.0.1:5000/ygfbad/web/maters', json={
         "sid": "{}".format(random_num),
         "timestamp": "{}".format(random_num),
         "content": "test_content"
     })
-    resp = requests.delete('http://127.0.0.1:5000/ygfbad/web/materials', json={
+    resp = requests.delete('http://127.0.0.1:5000/ygfbad/web/maters', json={
         "sid": "{}".format(random_num),
         "timestamp": "{}".format(random_num),
         "content": "test_content"

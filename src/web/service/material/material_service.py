@@ -4,7 +4,7 @@ from web.service.globals import Globals
 
 
 def insert_material(dict_data):
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         ad_material = Material()
         ad_material.__dict__.update(dict_data)
         session.add(ad_material)
@@ -13,14 +13,14 @@ def insert_material(dict_data):
 
 
 def del_material(dict_data):
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         target_obj = session.query(Material).filter_by(asin=dict_data['asin']).first()
         session.delete(target_obj)
     return 'success'
 
 
 def update_material(dict_data):
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         session.query(Material).filter_by(asin=dict_data['asin']).update(dict_data)
     return 'success'
 
@@ -38,7 +38,7 @@ def select_material(asin, uid, sorted_way=-1, key_word=None):
         'land_page_ids',
         'keywords'
     ]
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         if sorted_way == -1:
             exc_query = session.query(Material).order_by(Material.update_time.desc())
         else:

@@ -33,6 +33,7 @@ class MaterialRecord(Base):
     link = Column(String(2048))
 
 
+
 class Resources(Base):
     __tablename__ = 'resource'
 

@@ -1122,3 +1122,32 @@ hdfs.util.HdfsError: Path is not a file: /home/yiguo/yiguo_fbad/uploads/000001/2
 
 
 [2017-10-09 19:59:36,216]-[ERROR]-[4984]-[MainThread]-[18360]-[hdfs_wrapper.py:32] # reconnect hdfs...
+[2017-10-11 10:55:06,692]-[INFO]-[1520]-[MainThread]-[2428]-[hbase_wrapper.py:39] # init hbase: 192.168.0.26
+[2017-10-11 10:55:06,694]-[INFO]-[1520]-[MainThread]-[2428]-[hbase_wrapper.py:39] # init hbase: 192.168.0.26
+[2017-10-11 10:55:06,694]-[ERROR]-[1520]-[MainThread]-[2428]-[hbase_wrapper.py:64] # target table: test_table create fail.
+[2017-10-11 10:57:15,721]-[INFO]-[11236]-[MainThread]-[10828]-[hbase_wrapper.py:39] # init hbase: 192.168.0.26
+[2017-10-11 10:57:17,647]-[INFO]-[11236]-[MainThread]-[10828]-[hbase_wrapper.py:62] # target table: test_table create successfully.
+[2017-10-11 20:07:02,414]-[ERROR]-[9588]-[MainThread]-[13428]-[demo.py:15] # Traceback (most recent call last):
+  File "D:/Computer_Scientist_Tools/All_Projects/JobWorkspace/wrappers/tests/test_cases/demo.py", line 13, in <module>
+    i = 1 / 0
+ZeroDivisionError: division by zero
+
+[2017-10-11 20:07:30,709]-[ERROR]-[12404]-[MainThread]-[12996]-[demo.py:15] # division by zero
+[2017-10-11 20:08:00,048]-[ERROR]-[12556]-[MainThread]-[11872]-[demo.py:15] # division by zero
+[2017-10-11 20:08:00,048]-[ERROR]-[12556]-[MainThread]-[11872]-[demo.py:16] # Traceback (most recent call last):
+  File "D:/Computer_Scientist_Tools/All_Projects/JobWorkspace/wrappers/tests/test_cases/demo.py", line 13, in <module>
+    i = 1 / 0
+ZeroDivisionError: division by zero
+
+[2017-10-11 20:08:12,942]-[ERROR]-[1176]-[MainThread]-[14772]-[demo.py:15] # Traceback (most recent call last):
+  File "D:/Computer_Scientist_Tools/All_Projects/JobWorkspace/wrappers/tests/test_cases/demo.py", line 13, in <module>
+    i = 1 / 0
+ZeroDivisionError: division by zero
+
+[2017-10-11 20:08:12,943]-[ERROR]-[1176]-[MainThread]-[14772]-[demo.py:16] # division by zero
+[2017-10-11 20:08:14,364]-[ERROR]-[776]-[MainThread]-[9880]-[demo.py:15] # Traceback (most recent call last):
+  File "D:/Computer_Scientist_Tools/All_Projects/JobWorkspace/wrappers/tests/test_cases/demo.py", line 13, in <module>
+    i = 1 / 0
+ZeroDivisionError: division by zero
+
+[2017-10-11 20:08:14,364]-[ERROR]-[776]-[MainThread]-[9880]-[demo.py:16] # division by zero

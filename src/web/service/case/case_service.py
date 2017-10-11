@@ -6,7 +6,7 @@ from web.service.globals import Globals
 
 
 def insert_case(dict_data):
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         ad_case = AdCase()
         ad_case.__dict__.update(dict_data)
         session.add(ad_case)
@@ -16,14 +16,14 @@ def insert_case(dict_data):
 
 
 def del_case(dict_data):
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         session.query(AdCase).filter_by(uid=dict_data['uid']).filter(AdCase.id.in_(dict_data['id'])).delete(
             synchronize_session=False)
     return 'success'
 
 
 def update_case(dict_data):
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         session.query(AdCase).filter_by(id=dict_data['id']).update(dict_data)
     return 'success'
 
@@ -39,7 +39,7 @@ def select_case(dict_data, page_no=1, page_size=10, sorted_way=-1):
         'status',
         'bidding'
     ]
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         if sorted_way == -1:
             exce_query = session.query(AdCase).order_by(AdCase.update_time.desc())
         else:
@@ -55,6 +55,6 @@ def select_case(dict_data, page_no=1, page_size=10, sorted_way=-1):
 
 
 def update_case_status(dict_data):
-    with Globals.get_mysql_wrapper.session_scope() as session:
+    with Globals.get_mysql_wrapper().session_scope() as session:
         session.query(AdCase).filter_by(id=dict_data['id']).update(status=dict_data['status'])
     return 'success'

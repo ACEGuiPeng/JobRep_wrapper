@@ -13,9 +13,8 @@ class Material(Resource):
         asin = data_dict['asin']
         uid = data_dict['uid']
         sorted_way = data_dict['sorted_way']
-        key_words = data_dict['key_words']
-        update_time = data_dict['update_time']
-        result = select_material(asin, uid, sorted_way, key_words)
+        key_word = data_dict['key_word']
+        result = select_material(asin, uid, sorted_way, key_word)
         return json.dumps(result)
 
     def post(self):
